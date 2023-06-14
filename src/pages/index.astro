@@ -1,81 +1,65 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import economistaLogo from '../assets/eleconomista-logo.png'
+import psLabLogo from '../assets/pslab-logo.svg'
+import smartclipLogo from '../assets/smartclip-logo.svg'
+import Experience from '../components/Experience.jsx'
+import SocialNav from '../components/SocialNav.jsx'
+import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="Eduardo guette">
+	<div class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0">
+	</div>
+	<div class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0">
+	</div>
+	<header class="flex justify-between items-center py-4 mb-16 relative z-10">
+		<h1 class="font-native text-2xl">
+			<span class="font-bold underline decoration-wavy decoration-indigo-600"
+				>EG.</span
+			>
+		</h1>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+		<nav class="flex items-center gap-2 text-gray-800">
+			<a href="/" class="hover:text-gray-950">Home</a>
+			<span>{'/'}</span>
+			<a href="/about" class="hover:text-gray-950">About</a>
+		</nav>
+	</header>
+	<main class="pb-10 relative z-10">
+		<article class="mb-40">
+			<header class="mb-4">
+				<p>Hey there!👋</p>
+				<h1
+					class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-600"
+				>
+					I'm Eduardo Guette
+				</h1>
+				<h3>Software Engineer & Front-end Developer</h3>
+			</header>
+			<p>
+				I am a passionate software development and front-end design professional
+				with a solid and successful track record in creating impactful
+				technology solutions. My focus is on finding the perfect combination
+				between technical efficiency and user experience.
+			</p>
+			<footer>
+				<SocialNav />
+			</footer>
+		</article>
+		<article class="mb-32">
+			<p class="mb-4">Some of the companies I added value to :</p>
+
+			<div class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap">
+				<img src={smartclipLogo} alt=""  class="w-48 filter grayscale"/>
+				<img src={economistaLogo} alt="" class="w-48 filter grayscale" />
+				<img src={psLabLogo} alt=""  class="w-20 filter grayscale"/>
+			</div>
+		</article>
+		<Experience client:visible />
+	</main>
+	<footer>
+		<p class="text-center text-gray-600">
+			© {new Date().getFullYear()} Eduardo Guette
+		</p>
+	</footer>
+</Layout>
