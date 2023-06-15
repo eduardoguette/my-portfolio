@@ -13,7 +13,7 @@ const { title } = Astro.props
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<!-- Favicon -->
-		<link rel="icon" href="/image.svg" />
+		<link rel="icon" href="https://eduardoguette.vercel.app/image.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,21 +21,37 @@ const { title } = Astro.props
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
 			rel="stylesheet"
 		/>
-		<!--  Meta image -->
-		<meta property="og:image" content="/image.svg" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="Portfolio Eduardo Guette" />
-		<meta property="og:image:type" content="image/svg+xml" />
-		<meta property="og:image:secure_url" content="/image.svg" />
-		<meta property="og:image:alt" content="Portfolio Eduardo Guette" />
-		<meta property="og:image:type" content="image/svg+xml" />
-		<meta property="og:image:secure_url" content="/image.svg" />
-		<meta property="og:image:alt" content="Portfolio Eduardo Guette" />
-		<meta property="og:image:type" content="image/svg+xml" />
-		<meta property="og:image:secure_url" content="/image.svg" />
-		<!-- meta description -->
-		<meta property="og:description" content="Portfolio Eduardo Guette.  I am Software Engineer with 4 years of experience in the industry." />
+		<meta property="og:title" content="Portfolio Eduardo Guette" />
+		<meta property="og:type" content="portfolio.eduardoguette" />
+		<meta property="og:url" content="https://eduardoguette.vercel.app/" />
+		<meta
+			property="og:image"
+			content="https://eduardoguette.vercel.app/image.svg"
+		/>
+		<meta
+			property="og:description"
+			content="Eduardo Guette's portfolio, a software developer from Venezuela"
+		/>
+		<meta property="og:site_name" content="Portfolio Eduardo Guette" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@eduardoguette" />
+		<meta name="twitter:creator" content="@eduardoguette" />
+		<meta
+			name="twitter:title"
+			content="Portfolio Eduardo Guette"
+		/>
+		<meta
+			name="twitter:description"
+			content="Eduardo Guette's portfolio, a software developer from Venezuela"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://eduardoguette.vercel.app/image.svg"
+		/>
+		<meta name="twitter:image:alt" content="Eduardo Guette's portfolio" />
+		<meta name="twitter:site" content="@eduardoguette" />
+ 
+
 
 		<title>{title}</title>
 	</head>
@@ -55,15 +71,15 @@ const { title } = Astro.props
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #f6f6f6;  
+		background-color: #f6f6f6;
 		scroll-behavior: smooth;
-		scroll-padding-top: 1rem; 
+		scroll-padding-top: 1rem;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-		DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 	}
-	 
+
 	.card-experience {
 		grid-template-areas:
 			'companyName date'
