@@ -13,7 +13,7 @@ const SocialNav = () => {
     <ul className="flex items-center gap-2 mt-4">
       {social.map((item, index) => (
         <li key={index}>
-          <a href={item.url} target="_blank" rel="noopener noreferrer">
+          <a href={item.url} className="hover:text-indigo-500" target="_blank" rel="noopener noreferrer">
             {item.name}
           </a>
         </li>

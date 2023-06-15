@@ -8,9 +8,9 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Eduardo guette">
-	<div class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0">
+	<div class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0">
 	</div>
-	<div class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0">
+	<div class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0">
 	</div>
 	<header class="flex justify-between items-center py-4 mb-16 relative z-10">
 		<h1 class="font-native text-2xl">
@@ -20,13 +20,13 @@ import Layout from '../layouts/Layout.astro'
 		</h1>
 
 		<nav class="flex items-center gap-2 text-gray-800">
-			<a href="/" class="hover:text-gray-950">Home</a>
+			<a href="/#about" class="hover:text-indigo-600">About</a>
 			<span>{'/'}</span>
-			<a href="/about" class="hover:text-gray-950">About</a>
+			<a href="/#experience" class="hover:text-indigo-600">Experience</a>
 		</nav>
 	</header>
 	<main class="pb-10 relative z-10">
-		<article class="mb-40">
+		<article class="mb-40" id="about">
 			<header class="mb-4">
 				<p>Hey there!👋</p>
 				<h1

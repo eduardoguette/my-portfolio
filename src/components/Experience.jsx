@@ -86,7 +86,7 @@ const experiencie = [
 ]
 const Experience = () => {
   return (
-    <section className="mt-10">
+    <section className="mt-10" id="experience">
       <h4 className="text-lg font-bold underline decoration-wavy decoration-indigo-600">Experience</h4>
       <motion.ul layout className="mt-4 flex flex-col gap-4">
         <AnimatePresence>
