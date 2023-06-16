@@ -3,6 +3,7 @@ import { Colaborators } from './Colaborators'
 import { TitileSection } from './TitileSection'
 
 const Projects = ({ projects, name }) => {
+  
   return (
     <div>
       <TitileSection title={name} id="projects" />
@@ -27,18 +28,20 @@ const Projects = ({ projects, name }) => {
                   {project.colaborators.map((colaborator, index) => (
                     <Colaborators key={index} colaborator={colaborator} />
                   ))}
-                </div> 
+                </div>
               </div>
               <div className="w-max ml-auto  flex items-center gap-2 ">
                 <a
                   href={project.github}
-                  className=" items-center gap-2 flex hover:text-indigo-600 text-gray-800 underline"
+                  target="_blank"
+                  className=" hover:text-indigo-600 text-gray-800"
                 >
                   Code
                 </a>
                 <a
                   href={project.url}
-                  className=" items-center gap-2 flex hover:text-indigo-600 text-gray-800 underline"
+                  target="_blank"
+                  className="hover:text-indigo-600 text-gray-800"
                 >
                   Live
                 </a>

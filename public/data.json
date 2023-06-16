@@ -201,7 +201,14 @@
         "description": "Reclaim your peace of mind and clarity instantly. Organize your tasks efficiently with our innovative app. Free yourself from mental chaos and experience the power of simplified productivity.",
         "image": "./todoApp.png",
         "url": "https://todo-best.vercel.app/",
-        "github": "https://github.com/eduardoguette/to-do"
+        "github": "https://github.com/eduardoguette/to-do",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
       },
       {
         "id": 2,
@@ -209,7 +216,49 @@
         "description": "A quick home page, where in addition to being a search engine, you can save notes and at the same time have beautiful landscapes in the background.",
         "image": "./startHome.jpeg",
         "url": "https://start-home.netlify.app/",
-        "github": "https://github.com/eduardoguette/start-home"
+        "github": "https://github.com/eduardoguette/start-home",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacktoberfest 2022 - midudev",
+        "description": "This is a project to celebrate Hacktoberfest 2022. Feel free to send your pull requests to this repository and participate in the open source festivity!",
+        "image": "./hacktoberfest.png",
+        "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
+        "github": "https://github.com/midudev/password-generator",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Miduconf",
+        "description": "Miduconf is a conference about the latest news in the web development world. It is organized by midudev and it is celebrated in Madrid, Spain.",
+        "image": "./miduconf.png",
+        "url": "https://eduardoguette.github.io/GIFsApp/",
+        "github": "https://github.com/eduardoguette/miduconf-website",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          },
+          {
+            "name": "Miguel Ángel Durán",
+            "img": "https://avatars.githubusercontent.com/u/1561955?v=4",
+            "url": "https://github.com/midudev"
+          }
+        ]
       }
     ]
   }
