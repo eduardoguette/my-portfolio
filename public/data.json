@@ -1,6 +1,6 @@
 {
   "es": {
-    "experiencia": [
+    "experience": [
       {
         "id": 1,
         "company": "Smartclip Spain",
@@ -78,7 +78,14 @@
         "description": "Recupera tu tranquilidad y claridad al instante. Organiza tus tareas de forma eficiente con nuestra innovadora app. Libérate del caos mental y experimenta el poder de la productividad simplificada.",
         "image": "./todoApp.png",
         "url": "https://todo-best.vercel.app/",
-        "github": "https://github.com/eduardoguette/to-do"
+        "github": "https://github.com/eduardoguette/to-do",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
       },
       {
         "id": 2,
@@ -86,7 +93,49 @@
         "description": "Una página de inicio rápido, donde además de ser un buscador, podrás guardar notas y al mismo tiempo tener hermosos paisajes de fondo.",
         "image": "./startHome.jpeg",
         "url": "https://start-home.netlify.app/",
-        "github": "https://github.com/eduardoguette/start-home"
+        "github": "https://github.com/eduardoguette/start-home",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacktoberfest 2022 - midudev",
+        "description": "La Hacktoberfest es un evento anual organizado por DigitalOcean y DEV, que consiste en contribuir a proyectos de código abierto y ganar una camiseta gratis.",
+        "image": "./hacktoberfest.png",
+        "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
+        "github": "https://github.com/midudev/password-generator",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Miduconf",
+        "description": "Conferencia de desarrollo web organizada por midudev. En esta oportunidad apoye la conferencia con una pull request para la página web. ",
+        "image": "./miduconf.png",
+        "url": "https://eduardoguette.github.io/GIFsApp/",
+        "github": "https://github.com/eduardoguette/miduconf-website",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          },
+          {
+            "name": "Miguel Ángel Durán",
+            "img": "https://avatars.githubusercontent.com/u/1561955?v=4",
+            "url": "https://github.com/midudev"
+          }
+        ]
       }
     ]
   },

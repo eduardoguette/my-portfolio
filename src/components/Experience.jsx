@@ -1,11 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ExperienceList } from './ExperienceList'
+import { TitileSection } from './TitileSection'
 const Experience = ({ experience, name }) => {
   return (
     <section className="mt-10" id="experience">
-      <h4 className="text-lg font-bold underline decoration-wavy decoration-indigo-600">
-        {name}
-      </h4>
+      <TitileSection title={name} id='experience' />
       <motion.ul layout className="mt-4 flex flex-col gap-4">
         <AnimatePresence>
           {experience.map(
@@ -18,7 +17,7 @@ const Experience = ({ experience, name }) => {
                 key={id}
                 className="w-full transition-all"
               >
-                <article className="border border-gray-500 rounded-md p-3 shadow bg-white">
+                <article className="border border-gray-500 rounded-md p-3  bg-white">
                   <header className="grid card-experience w-full">
                     <p
                       className="font-medium text-lg"

@@ -5,6 +5,7 @@ import psLabLogo from '../assets/pslab-logo.svg'
 import smartclipLogo from '../assets/smartclip-logo.svg'
 import Experience from '../components/Experience.jsx'
 import Header from '../components/Header'
+import Projects from '../components/Projects.jsx'
 import SocialNav from '../components/SocialNav.jsx'
 import Layout from '../layouts/Layout.astro'
 ---
@@ -18,8 +19,8 @@ import Layout from '../layouts/Layout.astro'
     class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0"
   >
   </div>
-  
-	<Header />
+
+  <Header />
   <main class="pb-10 relative z-10">
     <article class="mb-40" id="about">
       <header class="mb-4">
@@ -43,7 +44,7 @@ import Layout from '../layouts/Layout.astro'
         <SocialNav />
       </footer>
     </article>
-    <article class="mb-32"> 
+    <article class="mb-32">
       <p class="mb-4">Algunas de las empresas a las que agregué valor:</p>
       <div
         class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap"
@@ -53,8 +54,13 @@ import Layout from '../layouts/Layout.astro'
         <img src={psLabLogo} alt="" class="w-20 filter grayscale" />
       </div>
     </article>
-    <Experience client:idle experience={data.es.experiencia} />
-    <footer>
+    <Projects client:idle projects={data.es.projects} name="Projectos" />
+    <Experience
+      client:idle
+      experience={data.es.experience}
+      name="Experiencia"
+    />
+    <footer class="my-20">
       <p class="text-center text-gray-600">
         © {new Date().getFullYear()} Eduardo Guette
       </p>

@@ -27,10 +27,10 @@ export const ExperienceList = ({ responsabilities }) => {
         }`}
       >
         <button
-          className="absolute bottom-0 right-0  rounded-full w-max px-2 py-1 text-xs bg-white hover:underline hover:text-indigo-500"
+          className="absolute bottom-0 right-0  rounded-md border-gray-600 w-max px-2 py-1 text-xs bg-white hover:underline hover:shadow border"
           onClick={onClick}
         >
-          {text}
+          {text} 
         </button>
       </div>
     </motion.ul>
