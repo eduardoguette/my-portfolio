@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ExperienceItem } from './ExperienceItem'
-export const ExperienceList = ({ responsabilitiesEnglish }) => {
+export const ExperienceList = ({ responsabilities }) => {
   const [collapsed, setCollapsed] = useState(true)
   const onClick = () => setCollapsed(!collapsed)
   const text = collapsed ? '...expand' : '...collapse'
   return (
-    <motion.ul
+    <motion.ul 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      
+      exit={{ opacity: 0 }}
       style={{
         gridArea: 'responsabilities'
       }}
@@ -18,7 +18,7 @@ export const ExperienceList = ({ responsabilitiesEnglish }) => {
         collapsed ? 'h-[80px] overflow-hidden' : 'h-auto pb-6'
       } `}
     >
-      {responsabilitiesEnglish.map((responsability) => (
+      {responsabilities.map((responsability) => (
         <ExperienceItem key={responsability} responsability={responsability} />
       ))}
       <div

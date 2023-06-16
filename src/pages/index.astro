@@ -1,31 +1,26 @@
 ---
+import data from '../../public/data.json'
 import economistaLogo from '../assets/eleconomista-logo.png'
 import psLabLogo from '../assets/pslab-logo.svg'
 import smartclipLogo from '../assets/smartclip-logo.svg'
 import Experience from '../components/Experience.jsx'
+import Header from '../components/Header.jsx'
+import Projects from '../components/Projects.jsx'
 import SocialNav from '../components/SocialNav.jsx'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Eduardo Guette">
-	<div class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0">
+	<div
+		class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0"
+	>
 	</div>
-	<div class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0">
+	<div
+		class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0"
+	>
 	</div>
-	<header class="flex justify-between items-center py-4 mb-16 relative z-10">
-		<h1 class="font-native text-2xl">
-			<span class="font-bold underline decoration-wavy decoration-indigo-600"
-				>EG.</span
-			>
-		</h1>
-
-		<nav class="flex items-center gap-2 text-gray-800">
-			<a href="/#about" class="hover:text-indigo-600">About</a>
-			<span>{'/'}</span>
-			<a href="/#experience" class="hover:text-indigo-600">Experience</a>
-		</nav>
-	</header>
-	<main class="pb-10 relative z-10">
+	<Header />
+	<main class="relative z-10">
 		<article class="mb-40" id="about">
 			<header class="mb-4">
 				<p>Hey there!👋</p>
@@ -49,17 +44,20 @@ import Layout from '../layouts/Layout.astro'
 		<article class="mb-32">
 			<p class="mb-4">Some of the companies I added value to :</p>
 
-			<div class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap">
-				<img src={smartclipLogo} alt=""  class="w-48 filter grayscale"/>
+			<div
+				class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap"
+			>
+				<img src={smartclipLogo} alt="" class="w-48 filter grayscale" />
 				<img src={economistaLogo} alt="" class="w-48 filter grayscale" />
-				<img src={psLabLogo} alt=""  class="w-20 filter grayscale"/>
+				<img src={psLabLogo} alt="" class="w-20 filter grayscale" />
 			</div>
 		</article>
-		<Experience client:visible />
+		<Projects client:idle projects={data.en.projects} />
+		<Experience client:idle experience={data.en.experience} />
+		<footer class="my-20">
+			<p class="text-center text-gray-600">
+				© {new Date().getFullYear()} Eduardo Guette
+			</p>
+		</footer>
 	</main>
-	<footer>
-		<p class="text-center text-gray-600">
-			© {new Date().getFullYear()} Eduardo Guette
-		</p>
-	</footer>
 </Layout>

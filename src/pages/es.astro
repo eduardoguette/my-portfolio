@@ -1,0 +1,63 @@
+---
+import data from '../../public/data.json'
+import economistaLogo from '../assets/eleconomista-logo.png'
+import psLabLogo from '../assets/pslab-logo.svg'
+import smartclipLogo from '../assets/smartclip-logo.svg'
+import Experience from '../components/Experience.jsx'
+import Header from '../components/Header'
+import SocialNav from '../components/SocialNav.jsx'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Eduardo Guette">
+  <div
+    class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0"
+  >
+  </div>
+  <div
+    class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0"
+  >
+  </div>
+  
+	<Header />
+  <main class="pb-10 relative z-10">
+    <article class="mb-40" id="about">
+      <header class="mb-4">
+        <p>Hola 👋🏼</p>
+        <h1
+          class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-600"
+        >
+          Soy Eduardo Guette
+        </h1>
+        <h3>Software Engineer & Front-end Developer</h3>
+      </header>
+      <!-- Translate  -->
+      <p>
+        Soy un apasionado profesional del desarrollo de software y diseño
+        front-end con una sólida y exitosa trayectoria en la creación de
+        soluciones tecnológicas de impacto. Mi enfoque está en encontrar la
+        combinación perfecta entre la eficiencia técnica y la experiencia del
+        usuario.
+      </p>
+      <footer>
+        <SocialNav />
+      </footer>
+    </article>
+    <article class="mb-32"> 
+      <p class="mb-4">Algunas de las empresas a las que agregué valor:</p>
+      <div
+        class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap"
+      >
+        <img src={smartclipLogo} alt="" class="w-48 filter grayscale" />
+        <img src={economistaLogo} alt="" class="w-48 filter grayscale" />
+        <img src={psLabLogo} alt="" class="w-20 filter grayscale" />
+      </div>
+    </article>
+    <Experience client:idle experience={data.es.experiencia} />
+    <footer>
+      <p class="text-center text-gray-600">
+        © {new Date().getFullYear()} Eduardo Guette
+      </p>
+    </footer>
+  </main>
+</Layout>
