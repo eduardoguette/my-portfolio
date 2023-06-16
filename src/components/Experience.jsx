@@ -1,17 +1,16 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ExperienceList } from './ExperienceList'
-const Experience = ({ experience }) => {
+const Experience = ({ experience, name }) => {
   return (
     <section className="mt-10" id="experience">
       <h4 className="text-lg font-bold underline decoration-wavy decoration-indigo-600">
-        Experience
+        {name}
       </h4>
       <motion.ul layout className="mt-4 flex flex-col gap-4">
         <AnimatePresence>
           {experience.map(
             ({ id, company, position, date, responsabilities }, indx) => (
               <motion.li
-                
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0 }}

@@ -52,8 +52,8 @@ import Layout from '../layouts/Layout.astro'
 				<img src={psLabLogo} alt="" class="w-20 filter grayscale" />
 			</div>
 		</article>
-		<Projects client:idle projects={data.en.projects} />
-		<Experience client:idle experience={data.en.experience} />
+		<Projects client:idle projects={data.en.projects} name="Projects" />
+		<Experience client:idle experience={data.en.experience} name="Experience" />
 		<footer class="my-20">
 			<p class="text-center text-gray-600">
 				© {new Date().getFullYear()} Eduardo Guette

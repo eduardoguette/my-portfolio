@@ -76,7 +76,7 @@
         "id": 1,
         "name": "To-do",
         "description": "Recupera tu tranquilidad y claridad al instante. Organiza tus tareas de forma eficiente con nuestra innovadora app. Libérate del caos mental y experimenta el poder de la productividad simplificada.",
-        "image": "https://github.com/eduardoguette/my-porfolio/blob/main/src/assets/todoApp.png?raw=true",
+        "image": "./todoApp.png",
         "url": "https://todo-best.vercel.app/",
         "github": "https://github.com/eduardoguette/to-do"
       },
@@ -84,7 +84,7 @@
         "id": 2,
         "name": "Start home",
         "description": "Una página de inicio rápido, donde además de ser un buscador, podrás guardar notas y al mismo tiempo tener hermosos paisajes de fondo.",
-        "image": "https://github.com/eduardoguette/my-porfolio/blob/main/src/assets/startHome.png?raw=true",
+        "image": "./startHome.jpeg",
         "url": "https://start-home.netlify.app/",
         "github": "https://github.com/eduardoguette/start-home"
       }
@@ -150,7 +150,7 @@
         "id": 1,
         "name": "To-do",
         "description": "Reclaim your peace of mind and clarity instantly. Organize your tasks efficiently with our innovative app. Free yourself from mental chaos and experience the power of simplified productivity.",
-        "image": "https://github.com/eduardoguette/my-porfolio/blob/main/src/assets/todoApp.png?raw=true",
+        "image": "./todoApp.png",
         "url": "https://todo-best.vercel.app/",
         "github": "https://github.com/eduardoguette/to-do"
       },
@@ -158,7 +158,7 @@
         "id": 2,
         "name": "Start home",
         "description": "A quick home page, where in addition to being a search engine, you can save notes and at the same time have beautiful landscapes in the background.",
-        "image": "https://github.com/eduardoguette/my-porfolio/blob/main/src/assets/startHome.png?raw=true",
+        "image": "./startHome.jpeg",
         "url": "https://start-home.netlify.app/",
         "github": "https://github.com/eduardoguette/start-home"
       }
