@@ -1,6 +1,6 @@
  <img src="./src/assets/imagen.png" alt="Eduardo " width="130" height="130">
 
-### Eduardo Guette Porfolio
+### Eduardo Guette Portfolio
 
 Este repositorio contiene el código fuente y los archivos relacionados con mi sitio web portfolio. Aquí encontrarás información sobre mi experiencia, habilidades y proyectos destacados. ¡Bienvenido/a!
 
