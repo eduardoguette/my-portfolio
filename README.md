@@ -1,55 +1,35 @@
-# Astro Starter Kit: Basics
+ <img src="./src/assets/imagen.png" alt="Eduardo " width="130" height="130">
 
-```
-npm create astro@latest -- --template basics
-```
+### Eduardo Guette Porfolio
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este repositorio contiene el código fuente y los archivos relacionados con mi sitio web portfolio. Aquí encontrarás información sobre mi experiencia, habilidades y proyectos destacados. ¡Bienvenido/a!
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Acerca de mí
+Soy Eduardo Guette, un Ing. Civil apasionado/a por el desarrollo de software y UX/UI. A lo largo de mi carrera, he adquirido experiencia en:
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+- Desarrollo de aplicaciones con React
+- Utilizo HTML semantico y CSS para crear sitios web responsive
+- Utilizo JavaScript para crear aplicaciones web interactivas
+- Para manejar el estado de mi aplicación en proyectos pequeños utilizo Context API y para proyectos grandes Redux, React Query o Zustand. Aunque este ultimo se ha vuelto mi favorito.😍
+- Para el manejo de rutas utilizo React Router
+- Para prototipar utilizo Figma.
 
+Mi objetivo principal es enriquecer tus proyectos con mis conocimientos. Me encanta enfrentar nuevos desafíos y aprender constantemente para mejorar mis habilidades.
 
-## 🚀 Project Structure
+Características del Sitio Web
+Mi sitio web portfolio tiene las siguientes características principales:
 
-Inside of your Astro project, you'll see the following folders and files:
+Diseño atractivo: El sitio web presenta un diseño moderno y atractivo que resalta mi trabajo y habilidades de manera efectiva.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Navegación intuitiva: Los visitantes pueden navegar fácilmente por las diferentes secciones del sitio web y acceder a la información que necesitan de manera intuitiva.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Sección de proyectos: En esta sección, presento algunos de mis proyectos destacados, junto con detalles sobre el objetivo, tecnologías utilizadas y los resultados obtenidos.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Información sobre mí: Aquí, los visitantes encontrarán una descripción detallada sobre mi experiencia, educación, certificaciones y cualquier otra información relevante que destaque mis logros y habilidades.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Si deseas realizar alguna mejora o cambio, siéntete libre de hacer un fork de este repositorio y enviar tus propias contribuciones a través de solicitudes de extracción. ¡Aprecio cualquier aporte!
 
-## 🧞 Commands
+Contacto
+Si tienes alguna pregunta o sugerencia relacionada con mi sitio web portfolio o cualquier otro tema, no dudes en contactarme enviándome un correo electrónico a eduardoguette@gmail.com.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+¡Espero que disfrutes navegando por mi portafolio!
