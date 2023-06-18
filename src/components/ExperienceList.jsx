@@ -4,9 +4,9 @@ import { ExperienceItem } from './ExperienceItem'
 export const ExperienceList = ({ responsabilities }) => {
   const [collapsed, setCollapsed] = useState(true)
   const onClick = () => setCollapsed(!collapsed)
-  const text = collapsed ? '...expand' : '...collapse'
+  const text = collapsed ? 'Expand' : 'Collapse'
   return (
-    <motion.ul 
+    <motion.ul
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -23,15 +23,20 @@ export const ExperienceList = ({ responsabilities }) => {
       ))}
       <div
         className={` z-10 bottom-0 w-full py-2 ${
-          !collapsed ? '' : 'absolute  h-20  bg-gradient-to-t from-white to-transparent'
+          !collapsed
+            ? ''
+            : 'absolute  h-20  bg-gradient-to-t from-white to-transparent'
         }`}
       >
-        <button
-          className="absolute bottom-0 right-0  rounded-md border-gray-600 w-max px-2 py-1 text-xs bg-white hover:underline hover:shadow border"
-          onClick={onClick}
-        >
-          {text} 
-        </button>
+        <div className='absolute w-max  bottom-1 right-1 group'>
+          <span className="w-full h-full bg-gray-900 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all shadow " />
+          <button
+            className="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium"
+            onClick={onClick}
+          >
+            {text}
+          </button>
+        </div>
       </div>
     </motion.ul>
   )
