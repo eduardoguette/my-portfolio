@@ -3,7 +3,6 @@ import { Colaborators } from './Colaborators'
 import { TitileSection } from './TitileSection'
 
 const Projects = ({ projects, name }) => {
-  
   return (
     <div>
       <TitileSection title={name} id="projects" />
@@ -15,11 +14,16 @@ const Projects = ({ projects, name }) => {
             className="border p-3 border-gray-500 rounded-md bg-white flex flex-col  transition-all group"
             key={index}
           >
-            <img
-              src={project.image}
-              alt={project.name}
-              referrerPolicy="no-referrer"
-            />
+            <picture className='w-[259.75px] h-[140px] overflow-hidden'>
+              <img
+                src={project.image}
+                alt={project.name}
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                width={259.75}
+                className='object-cover '
+              />
+            </picture>
             <h3 className="font-bold text-lg mt-1">{project.name}</h3>
             <p className="mb-6">{project.description}</p>
             <footer className="mt-auto w-full text-sm flex gap-2 items-center">
