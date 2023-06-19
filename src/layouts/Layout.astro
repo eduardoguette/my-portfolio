@@ -1,9 +1,9 @@
 ---
 export interface Props {
 	title: string
-	description: string,
-	lang: string,
-	canonical: string,
+	description: string
+	lang: string
+	canonical: string
 }
 
 const { title, description, lang, canonical } = Astro.props
@@ -17,7 +17,7 @@ const { title, description, lang, canonical } = Astro.props
 		<!-- Favicon -->
 		<link rel="icon" href="./image.svg" />
 		<meta name="generator" content={Astro.generator} />
- 
+
 		<link rel="shortcut icon" href="./image.svg" type="image/x-icon" />
 		<link rel="icon" href="./image.svg" type="image/x-icon" />
 		<link rel="canonical" href={canonical} />
@@ -64,19 +64,49 @@ const { title, description, lang, canonical } = Astro.props
 	@font-face {
 		font-family: 'Inter';
 		font-weight: 400;
-		src: url("../assets/fonts/Inter-Regular.woff2");
+		src: url('../assets/fonts/Inter-Regular.woff2');
 	}
 	@font-face {
 		font-family: 'Inter';
 		font-weight: 500;
-		src: url("../assets/fonts/Inter-Medium.woff2");
+		src: url('../assets/fonts/Inter-Medium.woff2');
 	}
 	@font-face {
 		font-family: 'Inter';
 		font-weight: 600;
-		src: url("../assets/fonts/Inter-SemiBold.woff2");
+		src: url('../assets/fonts/Inter-SemiBold.woff2');
 	}
 
+	.header h1 {
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		border-right: 0.15em solid rbg(99, 102, 241); /* The typwriter cursor */
+		white-space: nowrap; /* Keeps the content on a single line */
+		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		letter-spacing: 0.01em; /* Adjust as needed */
+		animation: typing 1.2s steps(15, end), blink-caret 0.75s step-end infinite;
+		width: max-content;
+	}
+
+	/* The typing effect */
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+		from,
+		to {
+			border-color: transparent;
+		}
+		50% {
+			border-color: rbg(99, 102, 241);
+		}
+	}
 	.card-experience {
 		grid-template-areas:
 			'companyName date'

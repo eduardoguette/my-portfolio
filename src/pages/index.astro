@@ -52,7 +52,8 @@ import Layout from '../layouts/Layout.astro'
 				<SocialNav />
 			</footer>
 		</article>
-		<article class="mb-32">
+		<Projects client:idle projects={data.en.projects} name="Projects" />
+		<article class="my-32">
 			<p class="mb-4">Some of the companies I added value to :</p>
 
 			<div
@@ -63,7 +64,6 @@ import Layout from '../layouts/Layout.astro'
 				<img src={psLabLogo} alt="Logo PsLab" height="49.27" width="80px" class="w-20 filter grayscale" />
 			</div>
 		</article>
-		<Projects client:idle projects={data.en.projects} name="Projects" />
 		<Experience client:idle experience={data.en.experience} name="Experience" />
 		<footer class="my-20">
 			<p class="text-center text-gray-600">
