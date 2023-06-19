@@ -32,7 +32,7 @@ import Layout from '../layouts/Layout.astro'
 				>
 					I'm Eduardo Guette
 				</h1>
-				<h3>Software Engineer & Front-end Developer</h3>
+				<p>Software Engineer & Front-end Developer</p>
 			</header>
 			<p>
 				I am a passionate software development and front-end design professional
@@ -43,7 +43,7 @@ import Layout from '../layouts/Layout.astro'
 			<footer class="mt-4">
 				<p class="text-sm">
 					Email me at <a
-						class="underline text-indigo-500"
+						class="underline hover:text-indigo-500"
 						href="mailto:eduardoguette@gmail.com">eduardoguette@gmail.com</a
 					> link or follow me via my social links.
 				</p>
@@ -56,9 +56,9 @@ import Layout from '../layouts/Layout.astro'
 			<div
 				class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap"
 			>
-				<img src={smartclipLogo} loading="lazy" alt="Logo Smartclip" width="192" class="w-48 filter grayscale" loading="lazy" />
-				<img src={economistaLogo} loading="lazy" alt="logo elEconomista" width="192" class="w-48 filter grayscale" />
-				<img src={psLabLogo} alt="Logo PsLab" width="80px" class="w-20 filter grayscale" />
+				<img src={smartclipLogo} loading="lazy" alt="Logo Smartclip" width="192" height="46.83" class="w-48 filter grayscale" loading="lazy" />
+				<img src={economistaLogo} loading="lazy" alt="logo elEconomista" width="192" height="41.59" class="w-48 filter grayscale" />
+				<img src={psLabLogo} alt="Logo PsLab" height="49.27" width="80px" class="w-20 filter grayscale" />
 			</div>
 		</article>
 		<Projects client:idle projects={data.en.projects} name="Projects" />

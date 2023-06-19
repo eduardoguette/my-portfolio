@@ -14,13 +14,14 @@ const Projects = ({ projects, name }) => {
             className="border p-3 border-gray-500 rounded-md bg-white flex flex-col  transition-all group"
             key={index}
           >
-            <picture className='w-[259.75px] h-[140px] overflow-hidden'>
+            <picture className=''>
               <img
                 src={project.image}
                 alt={project.name}
                 referrerPolicy="no-referrer"
                 loading="lazy"
-                width={259.75}
+                width="100%"
+                height={140}
                 className='object-cover '
               />
             </picture>

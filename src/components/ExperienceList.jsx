@@ -6,7 +6,7 @@ export const ExperienceList = ({ responsabilities }) => {
   const onClick = () => setCollapsed(!collapsed)
   const text = collapsed ? 'Expand' : 'Collapse'
   return (
-    <motion.ul
+    <motion.article
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -21,7 +21,7 @@ export const ExperienceList = ({ responsabilities }) => {
       {responsabilities.map((responsability) => (
         <ExperienceItem key={responsability} responsability={responsability} />
       ))}
-      <div
+      <footer
         className={` z-10 bottom-0 w-full py-2 ${
           !collapsed
             ? ''
@@ -37,7 +37,7 @@ export const ExperienceList = ({ responsabilities }) => {
             {text}
           </button>
         </div>
-      </div>
-    </motion.ul>
+      </footer>
+    </motion.article>
   )
 }
