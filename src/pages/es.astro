@@ -16,26 +16,19 @@ import Layout from '../layouts/Layout.astro'
   lang="es"
   canonical="https://eduardoguette.vercel.app/es"
 >
-  <div
-    class="fixed -z-1 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 left-0 top-0"
-  >
-  </div>
-  <div
-    class="fixed -z-1 h-[50px] w-[50px] lg:w-[200px] lg:h-[200px] rounded-full animate-pulse bg-indigo-500 blur-[150px] md:blur-[350px] opacity-100 right-0 bottom-0"
-  >
-  </div>
-
   <Header />
   <main class="pb-10 relative z-10">
     <article class="mb-40" id="about">
       <header class="mb-4">
-        <p>Hola 👋🏼</p>
+        <p class="text-gray-500 mb-2">¡Hola! 👋</p>
         <h1
           class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-600"
         >
           Soy Eduardo Guette
         </h1>
-        <p>Software Engineer & Front-end Developer</p>
+        <p class="italic text-slate-500">
+          Software Engineer & Front-end Developer
+        </p>
       </header>
       <!-- Translate  -->
       <p>
@@ -45,13 +38,7 @@ import Layout from '../layouts/Layout.astro'
         combinación perfecta entre la eficiencia técnica y la experiencia del
         usuario.
       </p>
-      <footer class="mt-4">
-        <p class="text-sm">
-          Envíeme un correo electrónico a <a
-            class="underline hover:text-indigo-500"
-            href="mailto:eduardoguette@gmail.com">eduardoguette@gmail.com</a
-          > o sígame a través de mis redes sociales.
-        </p>
+      <footer class="mt-8">
         <SocialNav />
       </footer>
     </article>
@@ -61,9 +48,27 @@ import Layout from '../layouts/Layout.astro'
       <div
         class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap"
       >
-      <img src={smartclipLogo} loading="lazy" alt="Logo Smartclip" width="192" class="w-48 filter grayscale" loading="lazy" />
-      <img src={economistaLogo} loading="lazy" alt="logo elEconomista" width="192" class="w-48 filter grayscale" />
-      <img src={psLabLogo} alt="Logo PsLab" width="80px" class="w-20 filter grayscale" />
+        <img
+          src={smartclipLogo}
+          loading="lazy"
+          alt="Logo Smartclip"
+          width="192"
+          class="w-48 filter grayscale"
+          loading="lazy"
+        />
+        <img
+          src={economistaLogo}
+          loading="lazy"
+          alt="logo elEconomista"
+          width="192"
+          class="w-48 filter grayscale"
+        />
+        <img
+          src={psLabLogo}
+          alt="Logo PsLab"
+          width="80px"
+          class="w-20 filter grayscale"
+        />
       </div>
     </article>
     <Experience
@@ -71,10 +76,8 @@ import Layout from '../layouts/Layout.astro'
       experience={data.es.experience}
       name="Experiencia"
     />
-    <footer class="my-20">
-      <p class="text-center text-gray-600">
-        © {new Date().getFullYear()} Eduardo Guette
-      </p>
-    </footer>
+    <footer class="my-20 border-t pt-10 border-gray-400 text-sm">
+			<p class="text-center text-slate-600">Made with 🖤 by Eduardo Guette</p>
+		</footer>
   </main>
 </Layout>

@@ -14,24 +14,31 @@ export const ExperienceList = ({ responsabilities }) => {
       style={{
         gridArea: 'responsabilities'
       }}
-      className={`list-disc ml-4 relative ${
-        collapsed ? 'h-[80px] overflow-hidden' : 'h-auto pb-6'
-      } `}
     >
-      {responsabilities.map((responsability) => (
-        <ExperienceItem key={responsability} responsability={responsability} />
-      ))}
-      <footer
-        className={` z-10 bottom-0 w-full py-2 ${
-          !collapsed
-            ? ''
-            : 'absolute  h-20  bg-gradient-to-t from-white to-transparent'
-        }`}
+      <div
+        className={`${collapsed ? 'h-12 overflow-hidden relative' : 'h-auto'}`}
       >
-        <div className='absolute w-max  bottom-1 right-1 group'>
-          <span className="w-full h-full bg-gray-900 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all shadow " />
+        {collapsed && (
+          <span
+            className={`${
+              collapsed
+                ? ' absolute w-full h-full overflow-hidden bg-gradient-to-b from-transparent to-white'
+                : 'h-auto hidden'
+            }`}
+          />
+        )}
+        {responsabilities.map((responsability) => (
+          <ExperienceItem
+            key={responsability}
+            responsability={responsability}
+          />
+        ))}
+      </div>
+      <footer className="flex justify-between pt-4">
+        <div className="relative w-max   ml-auto group">
+          <span className="w-full h-full  bg-gray-500 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0 group-active:m-0 group-hover:bg-indigo-950 transition-all group-hover:ml-1 group-hover:mt-1" />
           <button
-            className="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium"
+            className="rounded-md border-gray-600 w-max px-3 py-1.5 text-xs bg-white border z-10 relative font-medium  hover:text-gray-950 text-gray-800 "
             onClick={onClick}
           >
             {text}
