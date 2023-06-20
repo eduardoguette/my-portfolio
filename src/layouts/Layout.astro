@@ -59,22 +59,7 @@ const { title, description, lang, canonical } = Astro.props
 			Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 		scroll-behavior: smooth;
 		scroll-padding-top: 1rem;
-	}
-	html:before {
-		content: '';
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background: url('../assets/grain-dark-background.png') center center;
-		filter: brightness(0.4) sepia(1) hue-rotate(205deg) saturate(8);
-		opacity: 0.8;
-		z-index: -1;
-		-webkit-mask-image: radial-gradient(
-			70% 80% at 50% 50%,
-			black 40%,
-			transparent 70%
-		);
-	}
+	} 
 	body {  
 		background-image: url('../assets/Frame.svg'); 
 	}
