@@ -4,16 +4,7 @@
       {
         "id": 1,
         "company": "Smartclip Spain",
-        "position": "Sofware Engineer",
-        "date": "2023 - Presente",
-        "responsabilities": [
-          "Actualmente, aporto mi experiencia para optimizar el rendimiento y los KPIs de campañas publicitarias y otras cositas más. Además, he dejado mi marca en roles anteriores como Especialista en Front-end y Tecnología de Video, destacándome en la integración de contenido y la mejora del rendimiento a través de la refactorización de código."
-        ]
-      },
-      {
-        "id": 2,
-        "company": "Smartclip Spain",
-        "position": "Front-end Developer & Video Tech Specialist",
+        "position": "Software Engineer",
         "date": "2022 - 2023",
         "responsabilities": [
           "Desarrollar herramientas de trabajo utilizando PHP, Vite, React, JavaScript, Tailwind y CSS para crear aplicaciones web interactivas y atractivas",
@@ -24,7 +15,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 2,
         "company": "El Economista",
         "position": "Front-end Developer",
         "date": "2021 - 2022",
@@ -41,7 +32,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "company": "PS-Lab",
         "position": "Front-end Developer",
         "date": "2020 - 2021",
@@ -55,19 +46,19 @@
         ]
       },
       {
-        "id": 5,
+        "id": 4,
         "company": "Freelance",
         "position": "Front-end Developer",
         "date": "2018 - 2020",
         "responsabilities": [
-          "Llevar el diseño a la web usando HTML, CSS y JavaScript",
-          "Manejo de Boostrap",
-          "Manejo de JQuery",
-          "Manejo de Sass",
-          "Manejo de Git (control de versiones)",
-          "Web scrapping",
-          "Conocimento y Manejo de ReactJS, Redux, Styled Component",
-          "Proyectos: más de 10 proyectos en mi portafolio entre ellos, GIFsApp, Dashsocialmedia, FlagsApp."
+          "Llevar el diseño a la web utilizando HTML, CSS y JavaScript.",
+          "Manejo experto de Bootstrap para un desarrollo web eficiente y responsive.",
+          "Utilización de JQuery para mayor interactividad y elementos dinámicos en aplicaciones web.",
+          "Dominio de Sass para un desarrollo eficiente y modular de CSS.",
+          "Manejo de Git para control de versiones, permitiendo una colaboración efectiva y gestión del código.",
+          "Aplicación de técnicas de web scrapping para extraer y procesar datos de diversas fuentes.",
+          "Conocimiento amplio y experiencia en ReactJS, Redux y Styled Components para construir aplicaciones web escalables y mantenibles.",
+          "Portafolio que muestra más de 10 proyectos, incluyendo GIFsApp, Dashsocialmedia y FlagsApp."
         ]
       }
     ],
@@ -144,53 +135,61 @@
       {
         "id": 1,
         "company": "Smartclip Spain",
-        "position": "Sofware Engineer",
-        "date": "2023 - Present",
+        "position": "Software Engineer",
+        "date": "2022 - Present",
         "responsabilities": [
-          "Currently, I contribute my experience to optimize the performance and KPIs of advertising campaigns and other little things. In addition, I have left my mark in previous roles as a Front-end and Video Technology Specialist, standing out in content integration and performance improvement through code refactoring."
+          "Developed work tools using PHP, Vite, React, JavaScript, Tailwind, and CSS to create interactive and appealing web applications.",
+          "Implemented code compilation and transpilation using webpack and Babel to enhance compatibility across multiple browsers and ensure optimal performance.",
+          "Performed code refactoring following best programming practices, optimizing algorithms, and improving code efficiency to achieve optimal application performance.",
+          "Utilized Git for repository management, enabling effective version control and team collaboration.",
+          "Integrated Instream and Outstream ad formats, working with video technologies such as HTML5 Video, Video.js, JW Player, and Google IMA SDK to effectively integrate advertising seamlessly into videos."
         ]
       },
       {
         "id": 2,
-        "company": "Smartclip Spain",
-        "position": "Front-end Developer & Video Tech Specialist",
-        "date": "2022 - 2023",
-        "responsabilities": [
-          "Develop work tools using PHP, Vite, React, JavaScript, Tailwind and CSS to create interactive and attractive web applications",
-          "I implemented the compilation and transpilation of the code using webpack and babel to improve compatibility with multiple browsers and ensure optimal performance",
-          "I performed code refactoring using best programming practices, optimizing algorithms and improving code efficiency to achieve optimal application performance",
-          "I used Git to manage the working repository, allowing effective version control and team collaboration",
-          "I performed Instream and Oustream type integrations, working with video technologies such as HTML5 Video, Video.js, JW Player and Google IMA SDK to integrate advertising ads into videos effectively and without interruptions"
-        ]
-      },
-      {
-        "id": 3,
         "company": "El Economista",
         "position": "Front-end Developer",
         "date": "2021 - 2022",
         "responsabilities": [
-          "I implemented improvements in the Web Vitals metrics, following good development practices to ensure optimal performance and an improved user experience.",
-          "I developed attractive and functional landing pages, using HTML, CSS and JavaScript to create interactive and compelling interfaces.",
-          "I used Figma to make designs and prototypes, collaborating with the design team to create impactful visual and user experiences.",
-          "I created WebComponents using technologies such as HTML, CSS and JavaScript to modularize and reuse components in the development of web applications.",
-          "I collaborated with the team in the implementation of new functionalities on the website, contributing ideas and technical solutions to improve the user experience.",
-          "I performed the layout of landing pages, web sections and web tools using HTML, CSS and frameworks such as Bootstrap, ensuring a visually attractive appearance and intuitive navigation.",
-          "I refactored existing code, optimizing algorithms and data structures to improve performance, efficiency and maintainability of the base code.",
-          "I applied good development practices, following coding standards, clear documentation and use of static code analysis tools to ensure software quality.",
-          "I improved the visibility of advertising on the site by implementing good development practices, such as deferred loading of ads, the use of responsive ad formats and code optimization to improve viewability."
+          "Implemented enhancements to Web Vitals metrics, following best development practices to ensure optimal performance and improved user experience.",
+          "Developed engaging and functional landing pages using HTML, CSS, and JavaScript to create interactive and appealing interfaces.",
+          "Utilized Figma for design and prototyping, collaborating with the design team to create visually impactful user experiences.",
+          "Created Web Components using technologies like HTML, CSS, and JavaScript to modularize and reuse components in web application development.",
+          "Collaborated with the team in implementing new features on the website, contributing ideas and technical solutions to enhance the user experience.",
+          "Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks like Bootstrap, ensuring visually appealing appearance and intuitive navigation.",
+          "Refactored existing code, optimizing algorithms and data structures to improve performance, efficiency, and maintainability of the codebase.",
+          "Applied development best practices, following coding standards, clear documentation, and using static code analysis tools to ensure software quality.",
+          "Improved ad visibility on the site by implementing development best practices such as lazy loading of ads, using responsive ad formats, and optimizing code for enhanced visibility."
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "company": "PS-Lab",
         "position": "Front-end Developer",
         "date": "2020 - 2021",
         "responsabilities": [
-          "I participated in the optimization of the website, applying the best development practices and taking into account Google web vitals metrics, such as LCP (Largest Contentful Paint), FID (First Input Delay) and CLS (Cumulative Layout Shift).",
-          "I used HTML5, CSS and SASS to create visually attractive and responsive components and landing pages, ensuring a smooth and consistent user experience on different devices.",
-          "I implemented interactive features using JavaScript, taking advantage of its ability to manipulate the DOM and improve the interactivity of the website.",
-          "I used Highcharts and D3.js, two popular data visualization libraries, to represent graphs and present information in a clear and understandable way.",
-          "I took advantage of the Bootstrap framework to speed up development and ensure a consistent and professional visual appearance throughout the website. I used its components and predefined styles to achieve a quick and efficient implementation."
+          "Developed web applications using HTML, CSS, JavaScript, and frameworks like Bootstrap, React, and Vue, ensuring visually appealing appearance and intuitive navigation.",
+          "Implemented improvements in Web Vitals metrics, following best development practices to ensure optimal performance and a better user experience.",
+          "Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks like Bootstrap, ensuring visually appealing appearance and intuitive navigation.",
+          "Refactored existing code, optimizing algorithms and data structures to improve performance, efficiency, and maintainability of the codebase.",
+          "Applied development best practices, following coding standards, clear documentation, and using static code analysis tools to ensure software quality.",
+          "Enhanced ad visibility on the site by implementing development best practices such as lazy loading of ads, using responsive ad formats, and optimizing code for improved visibility."
+        ]
+      },
+      {
+        "id": 4,
+        "company": "Freelance",
+        "position": "Front-end Developer",
+        "date": "2018 - 2020",
+        "responsabilities": [
+          "Translating design into web using HTML, CSS, and JavaScript.",
+          "Proficient in Bootstrap for efficient and responsive web development.",
+          "Utilizing JQuery for enhanced interactivity and dynamic elements in web applications.",
+          "Expertise in Sass for efficient and modular CSS development.",
+          "Proficient in Git for version control, enabling effective collaboration and code management.",
+          "Utilizing web scraping techniques to extract and process data from various sources.",
+          "Extensive knowledge and experience in ReactJS, Redux, and Styled Components for building scalable and maintainable web applications.",
+          "Portfolio showcasing more than 10 projects, including GIFsApp, Dashsocialmedia, and FlagsApp."
         ]
       }
     ],

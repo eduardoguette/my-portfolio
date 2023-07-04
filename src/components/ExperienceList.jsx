@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ExperienceItem } from './ExperienceItem'
-export const ExperienceList = ({ responsabilities }) => {
+export const ExperienceList = ({ responsabilities }) => {  
   const [collapsed, setCollapsed] = useState(true)
   const onClick = () => setCollapsed(!collapsed)
   const text = collapsed ? 'Expand' : 'Collapse'

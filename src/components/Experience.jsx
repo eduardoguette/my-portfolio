@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ExperienceList } from './ExperienceList'
 import { TitileSection } from './TitileSection'
-const Experience = ({ experience, name }) => {
+const Experience = ({ experience, name }) => { 
   return (
     <section className="mt-10" id="experience">
       <TitileSection title={name} id='experience' />
