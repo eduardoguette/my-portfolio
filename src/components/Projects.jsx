@@ -14,7 +14,7 @@ const Projects = ({ projects, name }) => {
             className="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group"
             key={index}
           >
-            <picture className="">
+            <picture className="block aspect-video">
               <img
                 src={project.image}
                 alt={project.name}
