@@ -7,11 +7,11 @@ const Projects = ({ projects, name }) => {
     <div>
       <TitileSection title={name} id="projects" />
       <motion.ul
-        className={`grid grid-cols-[repeat(auto-fill,minmax(min(260px,100%),1fr))] gap-6 transition-all  `}
+        className={`grid grid-cols-[repeat(auto-fill,minmax(min(260px,100%),1fr))] gap-6 transition-all  reveal`}
       >
         {projects.map((project, index) => (
           <motion.li
-            className="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group"
+            className="border border-gray-500 rounded-lg overflow-hidden bg-white flex flex-col  transition-all group "
             key={index}
           >
             <picture className="block aspect-video">

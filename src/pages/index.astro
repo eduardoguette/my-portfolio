@@ -42,6 +42,7 @@ import Layout from '../layouts/Layout.astro'
 			</footer>
 		</article>
 		<Projects client:idle projects={data.en.projects} name="Projects" />
+		 
 		<article class="my-32">
 			<p class="mb-4">Some of the companies I added value to :</p>
 
@@ -49,7 +50,7 @@ import Layout from '../layouts/Layout.astro'
 				class="flex gap-10 items-center justify-center w-8/12 mx-auto my-10 flex-wrap md:flex-nowrap"
 			>
 				<img
-					src={smartclipLogo}
+					src={smartclipLogo.src}
 					loading="lazy"
 					alt="Logo Smartclip"
 					width="192"
@@ -58,7 +59,7 @@ import Layout from '../layouts/Layout.astro'
 					loading="lazy"
 				/>
 				<img
-					src={economistaLogo}
+					src={economistaLogo.src}
 					loading="lazy"
 					alt="logo elEconomista"
 					width="192"
@@ -66,7 +67,7 @@ import Layout from '../layouts/Layout.astro'
 					class="w-48 filter grayscale"
 				/>
 				<img
-					src={psLabLogo}
+					src={psLabLogo.src}
 					alt="Logo PsLab"
 					height="49.27"
 					width="80px"

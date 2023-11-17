@@ -5,7 +5,7 @@ const Experience = ({ experience, name }) => {
   return (
     <section className="mt-10" id="experience">
       <TitileSection title={name} id='experience' />
-      <motion.ul layout className="mt-4 flex flex-col gap-4">
+      <motion.ul layout className="mt-4 flex flex-col gap-4 reveal">
         <AnimatePresence>
           {experience.map(
             ({ id, company, position, date, responsabilities }, indx) => (

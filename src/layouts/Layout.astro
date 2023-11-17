@@ -9,7 +9,7 @@ export interface Props {
 const { title, description, lang, canonical } = Astro.props
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang={lang} class="">
   <head>
     <meta charset="UTF-8" />
@@ -37,13 +37,11 @@ const { title, description, lang, canonical } = Astro.props
 
     <title>{title}</title>
   </head>
-  <body class="scroll-smooth md:mb-0 w-full bg-slate-50 bg-top">
-    <div class="mx-auto p-4 lg:w-[80ch]">
-      <slot />
-    </div>
-  </body>
-</html>
-<style is:global>
+</html><body class="scroll-smooth md:mb-0 w-full bg-slate-50 bg-top">
+  <div class="mx-auto p-4 lg:w-[80ch]">
+    <slot />
+  </div>
+</body><style is:global>
   :root {
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
@@ -54,18 +52,36 @@ const { title, description, lang, canonical } = Astro.props
     );
   }
   html {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Helvetica Neue,
+      Arial,
+      Noto Sans,
+      sans-serif,
+      Apple Color Emoji,
+      Segoe UI Emoji,
+      Segoe UI Symbol,
+      Noto Color Emoji;
     scroll-behavior: smooth;
     scroll-padding-top: 1rem;
   }
   body {
-    background-image: url('../assets/Frame.svg');
   }
   code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
   }
   @keyframes fade-in {
     from {
@@ -80,13 +96,13 @@ const { title, description, lang, canonical } = Astro.props
   }
   @keyframes slide-from-right {
     from {
-      transform: translateY(30px);
+      transform: translateY(300px);
     }
   }
 
   @keyframes slide-to-left {
     to {
-      transform: translateY(-30px);
+      transform: translateY(-300px);
     }
   }
   ::view-transition-old(root),
@@ -95,12 +111,14 @@ const { title, description, lang, canonical } = Astro.props
   }
 
   ::view-transition-old(root) {
-    animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+    animation:
+      90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
       300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
   }
 
   ::view-transition-new(root) {
-    animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+    animation:
+      210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
       300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
   }
   /* 	@font-face {
@@ -125,7 +143,9 @@ const { title, description, lang, canonical } = Astro.props
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.01em; /* Adjust as needed */
-    animation: typing 1.2s steps(5, end), blink-caret 0.75s step-end infinite;
+    animation:
+      typing 1.2s steps(5, end),
+      blink-caret 0.75s step-end infinite;
     width: max-content;
   }
 
@@ -138,7 +158,21 @@ const { title, description, lang, canonical } = Astro.props
       width: 100%;
     }
   }
-
+  .reveal li {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 20%;
+  }
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      translate: 0 100px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from,
