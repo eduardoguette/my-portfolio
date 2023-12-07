@@ -8,12 +8,13 @@ import react from '@astrojs/react'
 export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'server',
-  adapter: vercel({  
+  adapter: vercel({
     webAnalytics: {
-      enabled: true,
+      enabled: true
     },
+    analytics: true,
     speedInsights: {
-      enabled: true,
+      enabled: true
     }
   })
 })
