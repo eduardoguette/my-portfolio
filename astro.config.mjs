@@ -9,8 +9,9 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   output: "server",
   adapter: vercel({
-    webAnalytics: {
+    analytics: true,
+    speedInsights: {
       enabled: true,
-    }
+    },
   }), 
 });
