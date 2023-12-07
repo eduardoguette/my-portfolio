@@ -7,11 +7,7 @@ export interface Props {
 }
 
 const { title, description, lang, canonical } = Astro.props
-import { injectSpeedInsights } from '@vercel/speed-insights'
  
-injectSpeedInsights({
-  framework: 'astro',
-});
 ---
 
 <!doctype html>
