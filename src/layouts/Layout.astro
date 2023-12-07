@@ -7,6 +7,9 @@ export interface Props {
 }
 
 const { title, description, lang, canonical } = Astro.props
+import { inject } from '@vercel/analytics'
+ 
+inject();
 ---
 
 <!doctype html>
