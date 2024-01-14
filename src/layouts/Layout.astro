@@ -5,13 +5,15 @@ export interface Props {
   lang: string
   canonical: string
 }
-
+ 
+import SpeedInsights from "@vercel/speed-insights/astro"
 const { title, description, lang, canonical } = Astro.props
 ---
 
 <!doctype html>
 <html lang={lang} class="">
   <head>
+    <SpeedInsights/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
@@ -45,7 +47,7 @@ const { title, description, lang, canonical } = Astro.props
   <div
     class="scroll-smooth md:mb-0 w-full text-white bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
   >
-    <slot />
+    <slot /> 
   </div>
 </body><style is:global>
   :root {
