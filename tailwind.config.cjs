@@ -47,6 +47,10 @@ module.exports = {
           800: '#103D5B',
           900: '#082030',
           950: '#040F16'
+        },
+        twilight: {
+          primary: '#222233',
+          secondary: '#444465'
         }
       }
     }

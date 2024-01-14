@@ -96,7 +96,7 @@ export const MailIcon = ({ className }) => {
       height="44"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="#2c3e50"
+      stroke="currentColor"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -104,6 +104,66 @@ export const MailIcon = ({ className }) => {
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
       <path d="M3 7l9 6l9 -6" />
+    </svg>
+  )
+}
+
+export const HandBag = ({ className }) => {
+  return (
+    <svg
+      width="24px"
+      height="24px"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      color="currentColor"
+      className={className}
+    >
+      <path
+        d="M9 8H4C2.89543 8 2 8.89543 2 10V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V10C22 8.89543 21.1046 8 20 8H15M9 8V3.6C9 3.26863 9.26863 3 9.6 3H14.4C14.7314 3 15 3.26863 15 3.6V8M9 8H15M9 8V14M15 8V14"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+    </svg>
+  )
+}
+
+export const CodeIcon = ({ className }) => {
+  return (
+    <svg
+      width="24px"
+      height="24px"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      color="currentColor"
+      className={className}
+    >
+      <path
+        d="M13.5 6L10 18.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M6.5 8.5L3 12L6.5 15.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M17.5 8.5L21 12L17.5 15.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
     </svg>
   )
 }

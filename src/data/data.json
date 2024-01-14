@@ -1,0 +1,272 @@
+{
+  "es": {
+    "hero": {
+      "title": "Soy Eduardo Guette",
+      "subtitle": "Desarrollador web con <strong>5+ años de experiencia</strong>. Especialista en productos digitales <strong>únicos e innovadores. Creatividad, detalle y trabajo en equipo</strong> para superar expectativas."
+    },
+    "experience": [
+      {
+        "id": 1,
+        "company": "Smartclip Spain",
+        "position": "Software Engineer",
+        "date": "2022 - Actualmente",
+        "responsabilities": [
+          "Desarrollar herramientas de trabajo utilizando PHP, Vite, React, JavaScript, Tailwind y CSS para crear aplicaciones web interactivas y atractivas",
+          "Implementé la compilación y transpilación del código utilizando webpack y babel para mejorar la compatibilidad con múltiples navegadores y asegurar un rendimiento óptimo",
+          "Realicé refactorizaciones de código utilizando las mejores prácticas de programación, optimizando algoritmos y mejorando la eficiencia del código para lograr un rendimiento óptimo de las aplicaciones",
+          "Utilicé Git para gestionar el repositorio de trabajo, permitiendo un control de versiones efectivo y colaboración en equipo",
+          "Realicé integraciones de tipo Instream y Oustream, trabajando con tecnologías de video como HTML5 Video, Video.js, JW Player y Google IMA SDK para integrar anuncios publicitarios en videos de manera efectiva y sin interrupciones"
+        ]
+      },
+      {
+        "id": 2,
+        "company": "El Economista",
+        "position": "Front-end Developer",
+        "date": "2021 - 2022",
+        "responsabilities": [
+          "Implementé mejoras en las métricas de Web Vitals, siguiendo buenas prácticas de desarrollo para asegurar un rendimiento óptimo y una mejor experiencia de usuario.",
+          "Desarrollé landing pages atractivas y funcionales, utilizando HTML, CSS y JavaScript para crear interfaces interactivas y atractivas.",
+          "Utilicé Figma para realizar diseños y prototipos, colaborando con el equipo de diseño para crear experiencias visuales e impactantes para el usuario.",
+          "Creé WebComponents utilizando tecnologías como HTML, CSS y JavaScript para modularizar y reutilizar componentes en el desarrollo de aplicaciones web.",
+          "Colaboré con el equipo en la implementación de nuevas funcionalidades en el sitio web, aportando ideas y soluciones técnicas para mejorar la experiencia de usuario.",
+          "Realicé el maquetado de landing pages, secciones web y herramientas web utilizando HTML, CSS y frameworks como Bootstrap, asegurando una apariencia visualmente atractiva y una navegación intuitiva.",
+          "Refactoricé código existente, optimizando algoritmos y estructuras de datos para mejorar el rendimiento, la eficiencia y la mantenibilidad del código base.",
+          "Apliqué buenas prácticas de desarrollo, siguiendo estándares de codificación, documentación clara y uso de herramientas de análisis de código estático para asegurar la calidad del software.",
+          "Mejoré la visibilidad de la publicidad en el sitio implementando buenas prácticas de desarrollo, como la carga diferida de anuncios, el uso de formatos de anuncios responsivos y la optimización de código para mejorar la visibilidad."
+        ]
+      },
+      {
+        "id": 3,
+        "company": "PS-Lab",
+        "position": "Front-end Developer",
+        "date": "2020 - 2021",
+        "responsabilities": [
+          "Desarrollé aplicaciones web utilizando HTML, CSS, JavaScript y frameworks como Bootstrap, asegurando una apariencia visualmente atractiva y una navegación intuitiva.",
+          "Implementé mejoras en las métricas de Web Vitals, siguiendo buenas prácticas de desarrollo para asegurar un rendimiento óptimo y una mejor experiencia de usuario.",
+          "Realicé el maquetado de landing pages, secciones web y herramientas web utilizando HTML, CSS y frameworks como Bootstrap, asegurando una apariencia visualmente atractiva y una navegación intuitiva.",
+          "Refactoricé código existente, optimizando algoritmos y estructuras de datos para mejorar el rendimiento, la eficiencia y la mantenibilidad del código base.",
+          "Apliqué buenas prácticas de desarrollo, siguiendo estándares de codificación, documentación clara y uso de herramientas de análisis de código estático para asegurar la calidad del software.",
+          "Mejoré la visibilidad de la publicidad en el sitio implementando buenas prácticas de desarrollo, como la carga diferida de anuncios, el uso de formatos de anuncios responsivos y la optimización de código para mejorar la visibilidad."
+        ]
+      },
+      {
+        "id": 4,
+        "company": "Freelance",
+        "position": "Front-end Developer",
+        "date": "2018 - 2020",
+        "responsabilities": [
+          "Llevar el diseño a la web utilizando HTML, CSS y JavaScript.",
+          "Manejo experto de Bootstrap para un desarrollo web eficiente y responsive.",
+          "Utilización de JQuery para mayor interactividad y elementos dinámicos en aplicaciones web.",
+          "Dominio de Sass para un desarrollo eficiente y modular de CSS.",
+          "Manejo de Git para control de versiones, permitiendo una colaboración efectiva y gestión del código.",
+          "Aplicación de técnicas de web scrapping para extraer y procesar datos de diversas fuentes.",
+          "Conocimiento amplio y experiencia en ReactJS, Redux y Styled Components para construir aplicaciones web escalables y mantenibles.",
+          "Portafolio que muestra más de 10 proyectos, incluyendo GIFsApp, Dashsocialmedia y FlagsApp."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "To-do",
+        "description": "Recupera tu tranquilidad y claridad al instante. Organiza tus tareas de forma eficiente con nuestra innovadora app. Libérate del caos mental y experimenta el poder de la productividad simplificada.",
+        "image": "./../assets/to-do.jpeg",
+        "url": "https://todo-best.vercel.app/",
+        "github": "https://github.com/eduardoguette/to-do",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Start home",
+        "description": "Una página de inicio rápido, donde además de ser un buscador, podrás guardar notas y al mismo tiempo tener hermosos paisajes de fondo.",
+        "image": "./../assets/start-home.jpeg",
+        "url": "https://start-home.netlify.app/",
+        "github": "https://github.com/eduardoguette/start-home",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacktoberfest 2022 - midudev",
+        "description": "La Hacktoberfest es un evento anual organizado por DigitalOcean y DEV, que consiste en contribuir a proyectos de código abierto y ganar una camiseta gratis.",
+        "image": "./../assets/pass.jpeg",
+        "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
+        "github": "https://github.com/midudev/password-generator",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Miduconf",
+        "description": "Conferencia de desarrollo web organizada por midudev. En esta oportunidad apoye la conferencia con una pull request para la página web. ",
+        "image": "./../assets/midu-conf.jpeg",
+        "url": "https://eduardoguette.github.io/GIFsApp/",
+        "github": "https://github.com/eduardoguette/miduconf-website",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          },
+          {
+            "name": "Miguel Ángel Durán",
+            "img": "https://avatars.githubusercontent.com/u/1561955?v=4",
+            "url": "https://github.com/midudev"
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "hero": {
+      "title": "I'm Eduardo Guette",
+      "subtitle": "Web developer with <strong>5+ years of experience</strong>. Specialist in <strong>unique and innovative digital products. Creativity, detail and teamwork</strong> to exceed expectations."
+    },
+    "experience": [
+      {
+        "id": 1,
+        "company": "Smartclip Spain",
+        "position": "Software Engineer",
+        "date": "2022 - Present",
+        "responsabilities": [
+          "Developed work tools using PHP, Vite, React, JavaScript, Tailwind, and CSS to create interactive and appealing web applications.",
+          "Implemented code compilation and transpilation using webpack and Babel to enhance compatibility across multiple browsers and ensure optimal performance.",
+          "Performed code refactoring following best programming practices, optimizing algorithms, and improving code efficiency to achieve optimal application performance.",
+          "Utilized Git for repository management, enabling effective version control and team collaboration.",
+          "Integrated Instream and Outstream ad formats, working with video technologies such as HTML5 Video, Video.js, JW Player, and Google IMA SDK to effectively integrate advertising seamlessly into videos."
+        ]
+      },
+      {
+        "id": 2,
+        "company": "El Economista",
+        "position": "Front-end Developer",
+        "date": "2021 - 2022",
+        "responsabilities": [
+          "Implemented enhancements to Web Vitals metrics, following best development practices to ensure optimal performance and improved user experience.",
+          "Developed engaging and functional landing pages using HTML, CSS, and JavaScript to create interactive and appealing interfaces.",
+          "Utilized Figma for design and prototyping, collaborating with the design team to create visually impactful user experiences.",
+          "Created Web Components using technologies like HTML, CSS, and JavaScript to modularize and reuse components in web application development.",
+          "Collaborated with the team in implementing new features on the website, contributing ideas and technical solutions to enhance the user experience.",
+          "Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks like Bootstrap, ensuring visually appealing appearance and intuitive navigation.",
+          "Refactored existing code, optimizing algorithms and data structures to improve performance, efficiency, and maintainability of the codebase.",
+          "Applied development best practices, following coding standards, clear documentation, and using static code analysis tools to ensure software quality.",
+          "Improved ad visibility on the site by implementing development best practices such as lazy loading of ads, using responsive ad formats, and optimizing code for enhanced visibility."
+        ]
+      },
+      {
+        "id": 3,
+        "company": "PS-Lab",
+        "position": "Front-end Developer",
+        "date": "2020 - 2021",
+        "responsabilities": [
+          "Developed web applications using HTML, CSS, JavaScript, and frameworks like Bootstrap ensuring visually appealing appearance and intuitive navigation.",
+          "Implemented improvements in Web Vitals metrics, following best development practices to ensure optimal performance and a better user experience.",
+          "Performed markup for landing pages, web sections, and web tools using HTML, CSS, and frameworks like Bootstrap, ensuring visually appealing appearance and intuitive navigation.",
+          "Refactored existing code, optimizing algorithms and data structures to improve performance, efficiency, and maintainability of the codebase.",
+          "Applied development best practices, following coding standards, clear documentation, and using static code analysis tools to ensure software quality.",
+          "Enhanced ad visibility on the site by implementing development best practices such as lazy loading of ads, using responsive ad formats, and optimizing code for improved visibility."
+        ]
+      },
+      {
+        "id": 4,
+        "company": "Freelance",
+        "position": "Front-end Developer",
+        "date": "2018 - 2020",
+        "responsabilities": [
+          "Translating design into web using HTML, CSS, and JavaScript.",
+          "Proficient in Bootstrap for efficient and responsive web development.",
+          "Utilizing JQuery for enhanced interactivity and dynamic elements in web applications.",
+          "Expertise in Sass for efficient and modular CSS development.",
+          "Proficient in Git for version control, enabling effective collaboration and code management.",
+          "Utilizing web scraping techniques to extract and process data from various sources.",
+          "Extensive knowledge and experience in ReactJS, Redux, and Styled Components for building scalable and maintainable web applications.",
+          "Portfolio showcasing more than 10 projects, including GIFsApp, Dashsocialmedia, and FlagsApp."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "To-do",
+        "description": "Reclaim your peace of mind and clarity instantly. Organize your tasks efficiently with our innovative app. Free yourself from mental chaos and experience the power of simplified productivity.",
+        "image": "./todoApp.jpg",
+        "url": "https://todo-best.vercel.app/",
+        "github": "https://github.com/eduardoguette/to-do",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Start home",
+        "description": "A quick home page, where in addition to being a search engine, you can save notes and at the same time have beautiful landscapes in the background.",
+        "image": "./startHome.jpg",
+        "url": "https://start-home.netlify.app/",
+        "github": "https://github.com/eduardoguette/start-home",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacktoberfest 2022 - midudev",
+        "description": "This is a project to celebrate Hacktoberfest 2022. Feel free to send your pull requests to this repository and participate in the open source festivity!",
+        "image": "./hacktoberfest.jpg",
+        "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
+        "github": "https://github.com/midudev/password-generator",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Miduconf",
+        "description": "Miduconf is a conference about the latest news in the web development world. It is organized by midudev and it is celebrated in Madrid, Spain.",
+        "image": "./miduconf.jpg",
+        "url": "https://eduardoguette.github.io/GIFsApp/",
+        "github": "https://github.com/eduardoguette/miduconf-website",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          },
+          {
+            "name": "Miguel Ángel Durán",
+            "img": "https://avatars.githubusercontent.com/u/1561955?v=4",
+            "url": "https://github.com/midudev"
+          }
+        ]
+      }
+    ]
+  }
+}

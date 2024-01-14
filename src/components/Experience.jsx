@@ -1,11 +1,12 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ExperienceList } from './ExperienceList'
+import { HandBag } from './Icons'
 import { TitileSection } from './TitileSection'
-const Experience = ({ experience, name }) => { 
+const Experience = ({ experience, name }) => {
   return (
-    <section className="mt-10" id="experience">
-      <TitileSection title={name} id='experience' />
-      <motion.ul layout className="mt-4 flex flex-col gap-4 reveal">
+    <section className="mt-20" id="experience">
+      <TitileSection title={name} id="experience" icon={<HandBag className={'h-10 w-10'} />} />
+      <motion.ul layout className=" flex flex-col reveal">
         <AnimatePresence>
           {experience.map(
             ({ id, company, position, date, responsabilities }, indx) => (
@@ -17,32 +18,27 @@ const Experience = ({ experience, name }) => {
                 key={id}
                 className="w-full transition-all"
               >
-                <article className="border border-gray-500 rounded-md p-3  bg-white">
-                  <header className="grid card-experience w-full">
+                <article className=" border-gray-500 pl-5 border-l pb-10 relative">
+                  <span className="h-3 w-3 rounded-full block bg-white absolute -left-1.5 top-1.5"></span>
+                  <time
+                    style={{
+                      gridArea: 'date'
+                    }}
+                    className="ml-auto"
+                  >
+                    {date}
+                  </time>
+                  <header className="my-4 card-experience w-full">
                     <p
-                      className="font-medium text-lg"
+                      className="font-medium text-2xl  text-blue-200"
                       style={{
                         gridArea: 'companyName'
                       }}
                     >
-                      {company}
+                      {position} - {company} 
                     </p>
-                    <p
-                      className="text-sm text-gray-500"
-                      style={{
-                        gridArea: 'position'
-                      }}
-                    >
-                      {position}
-                    </p>
-                    <span
-                      style={{
-                        gridArea: 'date'
-                      }}
-                      className="ml-auto"
-                    >
-                      {date}
-                    </span>
+                    
+
                     <ExperienceList responsabilities={responsabilities} />
                   </header>
                 </article>
@@ -56,3 +52,4 @@ const Experience = ({ experience, name }) => {
 }
 
 export default Experience
+ 

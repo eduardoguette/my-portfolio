@@ -1,3 +1,3 @@
 export const ExperienceItem = ({ responsability }) => {
-  return <div className="text-sm text-gray-500 my-1	">- {responsability}</div>
+  return <div className="text-md text-gray-200 	">{responsability}</div>
 }

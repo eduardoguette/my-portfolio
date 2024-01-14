@@ -2,16 +2,10 @@ const Header = () => {
   const string = '<'
   const string2 = '/>'
   return (
-    <header className="flex justify-between items-center py-4 mb-16 relative z-10 header">
-      <div className="max-content">
-        <h1 className="font-bold font-mono text-xl">
-          {string}
-          <span className="text-indigo-500">EG</span>
-          {string2}
-        </h1>
-      </div>
+    <header className="flex justify-between items-center py-4 mb-16 relative z-10 header  lg:w-[80ch] mx-auto">
+      
 
-      <nav className="flex items-center gap-2 text-gray-800">
+      <nav className="hidden items-center gap-2 ml-auto">
         <a href="/" className="hover:text-indigo-600">
           EN
         </a>
