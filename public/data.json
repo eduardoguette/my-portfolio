@@ -2,7 +2,7 @@
   "es": {
     "hero": {
       "title": "Soy Eduardo Guette",
-      "subtitle": "Desarrollador web con <strong>5+ años de experiencia</strong>. Especialista en productos digitales <strong>únicos e innovadores. Creatividad, detalle y trabajo en equipo.</strong>"
+      "subtitle": "Desarrollador web con <strong>5+ años de experiencia</strong>. Especialista en <strong class='text-yellow-200'>productos digitales únicos e innovadores.</strong> Creatividad, detalle y trabajo en equipo."
     },
     "experience": [
       {
@@ -113,7 +113,7 @@
   "en": {
     "hero": {
       "title": "I'm Eduardo Guette",
-      "subtitle": "<strong>Web developer</strong> with <strong>5+ years of experience</strong>. Specialist in <strong class='text-yellow-200'>unique and innovative digital products. Creativity, detail and teamwork</strong> to exceed expectations."
+      "subtitle": "<strong>Web developer</strong> with <strong>5+ years of experience</strong>. Specialist in <strong class='text-yellow-200'>unique and innovative digital products.</strong> Creativity, detail and teamwork to exceed expectations."
     },
     "experience": [
       {
