@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string
+  customClass?: string,
+  id?: string
+}
+const { title, customClass, id } = Astro.props
+---
+
+<h3
+  id={id}
+  class={'bg-gradient-to-t from-gray-500 to-white  font-bold bg-clip-text text-[32px] text-transparent text-center text-pretty w-full flex gap-3 justify-center items-center ' +
+    customClass}
+>
+  {title}
+</h3>

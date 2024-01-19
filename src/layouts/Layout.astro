@@ -52,7 +52,7 @@ const { title, description, lang, canonical } = Astro.props
 </html>
 <body class="">
   <div
-    class="scroll-smooth md:mb-0 w-full text-white bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    class="scroll-smooth md:mb-0 w-full text-white bg-black "
   >
     <slot /> 
   </div>
@@ -82,33 +82,25 @@ const { title, description, lang, canonical } = Astro.props
       Segoe UI Emoji,
       Segoe UI Symbol,
       Noto Color Emoji;
-    scroll-behavior: smooth;
-    scroll-padding-top: 1rem;
+    scroll-behavior: smooth; 
+    
+    scroll-padding-top: 100px;
   }
   body {
     overscroll-behavior: none;
+    
   }
   .grid-proyects {
     grid-template-areas: 'index0 index0 index1 index1' 'index0 index0 index2 index3';
     grid-template-rows: 70% 25% ;
   } 
 
-  /* 	@font-face {
-		font-family: 'Inter';
-		font-weight: 400;
-		src: url('../assets/fonts/Inter-Regular.woff2');
-	}
-	@font-face {
-		font-family: 'Inter';
-		font-weight: 500;
-		src: url('../assets/fonts/Inter-Medium.woff2');
-	}
-	@font-face {
-		font-family: 'Inter';
-		font-weight: 600;
-		src: url('../assets/fonts/Inter-SemiBold.woff2');
-	}
- */
+.grid-bento{
+  grid-template-areas: "item0 item1 item3"
+                      "item0 item2 item2"
+                      "item0 item2 item2";
+
+}
   .header h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid rbg(99, 102, 241); /* The typwriter cursor */

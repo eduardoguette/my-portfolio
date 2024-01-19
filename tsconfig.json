@@ -4,5 +4,9 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "allowSyntheticDefaultImports": true
+  },
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"]
   }
 }

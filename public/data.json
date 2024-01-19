@@ -47,7 +47,7 @@
         "id": 1,
         "name": "To-do",
         "description": "Recupera tu tranquilidad y claridad al instante. Organiza tus tareas de forma eficiente con nuestra innovadora app. Libérate del caos mental y experimenta el poder de la productividad simplificada.",
-        "image": "./to-do.jpeg",
+        "image": "./to-do.webp",
         "url": "https://todo-best.vercel.app/",
         "github": "https://github.com/eduardoguette/to-do",
         "colaborators": [
@@ -62,7 +62,7 @@
         "id": 2,
         "name": "Start home",
         "description": "Una página de inicio rápido, donde además de ser un buscador, podrás guardar notas y al mismo tiempo tener hermosos paisajes de fondo.",
-        "image": "./start-home.jpeg",
+        "image": "./start-home.webp",
         "url": "https://start-home.netlify.app/",
         "github": "https://github.com/eduardoguette/start-home",
         "colaborators": [
@@ -77,7 +77,7 @@
         "id": 3,
         "name": "Hacktoberfest 2022 - midudev",
         "description": "La Hacktoberfest es un evento anual organizado por DigitalOcean y DEV, que consiste en contribuir a proyectos de código abierto y ganar una camiseta gratis.",
-        "image": "./pass.jpeg",
+        "image": "./pass.webp",
         "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
         "github": "https://github.com/midudev/password-generator",
         "colaborators": [
@@ -92,7 +92,7 @@
         "id": 4,
         "name": "Miduconf",
         "description": "Conferencia de desarrollo web organizada por midudev. En esta oportunidad apoye la conferencia con una pull request para la página web. ",
-        "image": "./midu-conf.jpeg",
+        "image": "./midu-conf.webp",
         "url": "https://eduardoguette.github.io/GIFsApp/",
         "github": "https://github.com/eduardoguette/miduconf-website",
         "colaborators": [
@@ -112,8 +112,10 @@
   },
   "en": {
     "hero": {
-      "title": "I'm Eduardo Guette",
-      "subtitle": "<strong>Web developer</strong> with <strong>5+ years of experience</strong>. Specialist in <strong class=''>unique and innovative digital products.</strong> Creativity, detail and teamwork to exceed expectations."
+      "title": "Eduardo Guette",
+      "born": "Born in Caracas, Venezuela in 1990",
+      "work": "Work @SmartclipSpain",
+      "subtitle": "Web developer with 5+ years of experience. Specialist in unique and innovative digital products. Creativity, detail and teamwork to exceed expectations."
     },
     "experience": [
       {
@@ -156,24 +158,9 @@
     "projects": [
       {
         "id": 1,
-        "name": "To-do",
-        "description": "Reclaim your peace of mind and clarity instantly. Organize your tasks efficiently with our innovative app. Free yourself from mental chaos and experience the power of simplified productivity.",
-        "image": "./to-do.jpeg",
-        "url": "https://todo-best.vercel.app/",
-        "github": "https://github.com/eduardoguette/to-do",
-        "colaborators": [
-          {
-            "name": "Eduardo Guette",
-            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
-            "url": "https://github.com/eduardoguette"
-          }
-        ]
-      },
-      {
-        "id": 2,
         "name": "Start home",
         "description": "A quick home page, where in addition to being a search engine, you can save notes and at the same time have beautiful landscapes in the background.",
-        "image": "./start-home.jpeg",
+        "image": "./start-home.webp",
         "url": "https://start-home.netlify.app/",
         "github": "https://github.com/eduardoguette/start-home",
         "colaborators": [
@@ -185,10 +172,26 @@
         ]
       },
       {
+        "id": 2,
+        "name": "To-do",
+        "description": "Reclaim your peace of mind and clarity instantly. Organize your tasks efficiently with our innovative app. Free yourself from mental chaos and experience the power of simplified productivity.",
+        "image": "./to-do.webp",
+        "url": "https://todo-best.vercel.app/",
+        "github": "https://github.com/eduardoguette/to-do",
+        "colaborators": [
+          {
+            "name": "Eduardo Guette",
+            "img": "https://avatars.githubusercontent.com/u/61714979?v=4",
+            "url": "https://github.com/eduardoguette"
+          }
+        ]
+      },
+
+      {
         "id": 3,
         "name": "Hacktoberfest 2022 - midudev",
         "description": "This is a project to celebrate Hacktoberfest 2022. Feel free to send your pull requests to this repository and participate in the open source festivity!",
-        "image": "./pass.jpeg",
+        "image": "./pass.webp",
         "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
         "github": "https://github.com/midudev/password-generator",
         "colaborators": [
@@ -203,8 +206,8 @@
         "id": 4,
         "name": "Miduconf",
         "description": "Miduconf is a conference about the latest news in the web development world. It is organized by midudev and it is celebrated in Madrid, Spain.",
-        "image": "./midu-conf.jpeg",
-        "url": "https://eduardoguette.github.io/GIFsApp/",
+        "image": "./midu-conf.webp",
+        "url": "https://deploy-preview-3--amazing-creponne-8dac75.netlify.app/",
         "github": "https://github.com/eduardoguette/miduconf-website",
         "colaborators": [
           {
