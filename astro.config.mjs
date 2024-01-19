@@ -16,8 +16,5 @@ export default defineConfig({
     speedInsights: {
       enabled: true
     }
-  }),
-  alias: {
-    '@': '/src'
-  }
+  })
 })
