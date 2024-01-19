@@ -160,7 +160,7 @@
         "id": 1,
         "name": "Start home",
         "description": "A quick home page, where in addition to being a search engine, you can save notes and at the same time have beautiful landscapes in the background.",
-        "image": "./start-home.webp",
+        "image": "./start-home.webp?w=329&h=538.505",
         "url": "https://start-home.netlify.app/",
         "github": "https://github.com/eduardoguette/start-home",
         "colaborators": [
@@ -175,7 +175,7 @@
         "id": 2,
         "name": "To-do",
         "description": "Reclaim your peace of mind and clarity instantly. Organize your tasks efficiently with our innovative app. Free yourself from mental chaos and experience the power of simplified productivity.",
-        "image": "./to-do.webp",
+        "image": "./to-do.webp?w=282.66&h=163.77",
         "url": "https://todo-best.vercel.app/",
         "github": "https://github.com/eduardoguette/to-do",
         "colaborators": [
@@ -191,7 +191,7 @@
         "id": 3,
         "name": "Hacktoberfest 2022 - midudev",
         "description": "This is a project to celebrate Hacktoberfest 2022. Feel free to send your pull requests to this repository and participate in the open source festivity!",
-        "image": "./pass.webp",
+        "image": "./pass.webp?w=682&h=393.7",
         "url": "https://hacktoberfest-2022.vercel.app/entry/eduardoguette",
         "github": "https://github.com/midudev/password-generator",
         "colaborators": [
@@ -206,7 +206,7 @@
         "id": 4,
         "name": "Miduconf",
         "description": "Miduconf is a conference about the latest news in the web development world. It is organized by midudev and it is celebrated in Madrid, Spain.",
-        "image": "./midu-conf.webp",
+        "image": "./midu-conf.webp?w=282.66&h=163.77",
         "url": "https://deploy-preview-3--amazing-creponne-8dac75.netlify.app/",
         "github": "https://github.com/eduardoguette/miduconf-website",
         "colaborators": [
