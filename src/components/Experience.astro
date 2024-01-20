@@ -12,15 +12,15 @@ const { experience } = Astro.props
         <li class="w-full transition-all mb-6">
           <Box client:idle>
             <header class="card-experience w-full">
-              <div class="text-md text-gray-300">{responsabilities[0]}</div>
               <h4
-                class="font-medium text-xl mt-4  "
+                class="font-medium text-xl mb-4  "
                 style={{
                   gridArea: 'companyName'
                 }}
               >
                 {position} - {company}
               </h4>
+              <div class="text-md text-gray-300">{responsabilities[0]}</div>
               <time
                 style={{
                   gridArea: 'date'

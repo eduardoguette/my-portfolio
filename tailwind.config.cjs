@@ -55,7 +55,9 @@ module.exports = {
       },
       animation: {
         'background-shine': 'background-shine 2s linear infinite',
-        "border-width": "border-width 6s both infinite "
+        'border-width': 'border-width 6s both ',
+        marquee: 'marquee 20s linear infinite',
+        marquee2: 'marquee2  25s linear infinite'
       },
       keyframes: {
         'background-shine': {
@@ -66,16 +68,24 @@ module.exports = {
             backgroundPosition: '-200% 0'
           }
         },
-        "border-width": {
-          "from": {
-            "width": "100px",
-            "opacity": "0"
+        'border-width': {
+          from: {
+            width: '100px',
+            opacity: '0'
           },
-          "to": {
-            "width": "100px",
-            "opacity": "1"
+          to: {
+            width: '100px',
+            opacity: '1'
           }
-        }
+        },
+        marquee: {
+          '0%': { transform: 'translateX(50%)' },
+          '100%': { transform: 'translateX(-150%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       }
     }
   },

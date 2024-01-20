@@ -1,0 +1,37 @@
+---
+import economistaLogo from '../assets/eleconomista-logo.svg'
+import psLabLogo from '../assets/pslab-logo.svg'
+import smartclipLogo from '../assets/smartclip-logo.svg'
+---
+
+<div
+  style="mask-image:linear-gradient(90deg,transparent,#fff 90px,#fff calc(100% - 90px),transparent)"
+  class="flex overflow-x-auto"
+>
+  <article class="py-6 whitespace-nowrap flex justify-center gap-x-16 animate-marquee md:animate-none mx-auto">
+    <img
+      src={smartclipLogo.src}
+      loading="lazy"
+      alt="Logo Smartclip"
+      width="192"
+      height="46.83"
+      class="w-48 filter invert h-[46.83px] inline-block"
+      loading="lazy"
+    />
+    <img
+      src={economistaLogo.src}
+      loading="lazy"
+      alt="logo elEconomista"
+      width="192"
+      height="41.59"
+      class="w-48 filter invert h-[41.59px] inline-block"
+    />
+    <img
+      src={psLabLogo.src}
+      alt="Logo PsLab"
+      height="49.27"
+      width="80px"
+      class="w-20 filter invert h-[49.27px] inline-block"
+    />
+  </article>  
+</div>
