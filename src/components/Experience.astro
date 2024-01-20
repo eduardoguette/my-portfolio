@@ -10,7 +10,7 @@ const { experience } = Astro.props
     {
       experience.map(({ id, company, position, date, responsabilities }) => (
         <li class="w-full transition-all mb-6">
-          <Box>
+          <Box client:idle>
             <header class="card-experience w-full">
               <div class="text-md text-gray-300">{responsabilities[0]}</div>
               <h4
