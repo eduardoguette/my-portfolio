@@ -206,7 +206,7 @@
         "name": "Miduconf",
         "description": "Miduconf is a conference about the latest news in the web development world. It is organized by midudev and it is celebrated in Madrid, Spain.",
         "image": "./midu-conf.webp",
-        "url": "https://rb.gy/7v2x0i",
+        "url": "https://deploy-preview-3--amazing-creponne-8dac75.netlify.app/",
         "github": "https://github.com/eduardoguette/miduconf-website",
         "colaborators": [
           {

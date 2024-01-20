@@ -5,6 +5,7 @@ export interface Props {
   lang: string
   canonical: string
 }
+import SpeedInsights from "@vercel/speed-insights/astro"
 
 const { title, description, lang, canonical } = Astro.props
 ---
@@ -12,6 +13,7 @@ const { title, description, lang, canonical } = Astro.props
 <!doctype html>
 <html lang={lang} class="">
   <head>
+    <SpeedInsights />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Favicon -->
