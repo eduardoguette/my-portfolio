@@ -2,28 +2,14 @@
 import { Colaborators } from './Colaborators'
 import { ArrowUp } from './Icons'
 
-interface Props {
-  projects?: {
-    name: string
-    description: string
-    image: string
-    url: string
-    github: string
-    colaborators: {
-      name: string
-      image: string
-      url: string
-    }[]
-  }[]
-  name?: string
-}
-const { projects, name } = Astro.props
+ 
+const { projects } = Astro.props
 ---
 
 <div class="block mt-8 relative overflow-hidden">
   <ul class="grid grid-bento grid-cols-3 grid-rows-3 gap-6 mt-8 relative">
     {
-      projects.map((project, index) => { 
+      projects.map((project, index) => {
         return (
           <div
             style={{
