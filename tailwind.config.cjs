@@ -56,7 +56,7 @@ module.exports = {
       animation: {
         'background-shine': 'background-shine 2s linear infinite',
         'border-width': 'border-width 6s both ',
-        marquee: 'marquee 20s linear infinite',
+        marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2  25s linear infinite'
       },
       keyframes: {
@@ -79,7 +79,7 @@ module.exports = {
           }
         },
         marquee: {
-          '0%': { transform: 'translateX(50%)' },
+          '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-150%)' },
         },
         marquee2: {
