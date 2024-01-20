@@ -45,7 +45,7 @@ const { projects } = Astro.props
             <footer class="flex mt-auto w-full p-5 pt-0  text-sm  gap-2 items-center">
               <div class="flex items-start gap-2">
                 <div class="flex  justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-2 w-max">
-                  {project.colaborators.map((colaborator, index) => (
+                  {project.colaborators.map((colaborator) => (
                     <Colaborators colaborator={colaborator} />
                   ))}
                 </div>
