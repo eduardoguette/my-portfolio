@@ -26,19 +26,22 @@ export const ToggleDarkMode = () => {
 
   return (
     <div className="flex items-center gap-2 ml-auto w-max mt-4 ">
-      <button
+      <button 
+        title='Set dark '
         onClick={() => handleClick('dark')}
         className={`h-6 w-6 grid place-content-center rounded-full hover:bg-neutral-100 hover:text-black ${theme === 'dark' && !themeSystem ? 'bg-gray-200 text-black' : ''}`}
       >
         <Moon />
       </button>
       <button
+        title='Set light '
         onClick={() => handleClick('light')}
         className={`h-6 w-6 grid place-content-center rounded-full hover:bg-gray-200 hover:text-black ${theme === 'light' && !themeSystem ? 'bg-gray-200 text-black' : ''}`}
       >
         <Sun />
       </button>
       <button
+        title='Set system '
         onClick={() => handleClick('system')}
         className={`h-6 w-6 grid place-content-center rounded-full hover:bg-gray-200 hover:text-black ${themeSystem ? 'bg-gray-200 text-black' : ''}`}
       >

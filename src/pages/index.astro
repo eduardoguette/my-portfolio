@@ -27,7 +27,7 @@ import Layout from '../layouts/Layout.astro'
   >
     <header
       id="about"
-      class="relative pb-7 md:grid-cols-[315px,1fr] grid bento gap-8 w-full overflow-hidden"
+      class="relative pb-7 grid md:grid-cols-[315px,1fr] grid-rows-[332px] gap-8 w-full overflow-hidden"
     >
       <Box client:idle>
         <Hero />
@@ -57,7 +57,6 @@ import Layout from '../layouts/Layout.astro'
       </div>
     </header>
 
-    
     <Companies />
     <Projects projects={data.en.projects} name="Projects" />
     <Experience experience={data.en.experience} name="Experience" />
