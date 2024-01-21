@@ -8,7 +8,7 @@ export const ToggleDarkMode = () => {
 
   useEffect(() => {
     localStorage.setItem('theme', theme)
-    document.documentElement.setAttribute('theme', theme)
+    document.documentElement.setAttribute('class', theme)
 
   }, [theme])
 
@@ -19,8 +19,7 @@ export const ToggleDarkMode = () => {
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       setTheme(systemTheme)
       return
-    }
-    localStorage.setItem('theme-system', "false")
+    } 
     setThemeSystem(false)
     setTheme(theme)
   }
@@ -28,20 +27,20 @@ export const ToggleDarkMode = () => {
   return (
     <div className="flex items-center gap-2 ml-auto w-max mt-4 ">
       <button
-        onClick={() => handleClick('light')}
-        className={`h-6 w-6 grid place-content-center rounded-full hover:bg-neutral-100 hover:text-black ${theme === 'light' && !themeSystem ? 'bg-neutral-100 text-black' : ''}`}
-      >
-        <Sun />
-      </button>
-      <button
         onClick={() => handleClick('dark')}
-        className={`h-6 w-6 grid place-content-center rounded-full hover:bg-neutral-100 hover:text-black ${theme === 'dark' && !themeSystem ? 'bg-neutral-100 text-black' : ''}`}
+        className={`h-6 w-6 grid place-content-center rounded-full hover:bg-neutral-100 hover:text-black ${theme === 'dark' && !themeSystem ? 'bg-gray-200 text-black' : ''}`}
       >
         <Moon />
       </button>
       <button
+        onClick={() => handleClick('light')}
+        className={`h-6 w-6 grid place-content-center rounded-full hover:bg-gray-200 hover:text-black ${theme === 'light' && !themeSystem ? 'bg-gray-200 text-black' : ''}`}
+      >
+        <Sun />
+      </button>
+      <button
         onClick={() => handleClick('system')}
-        className={`h-6 w-6 grid place-content-center rounded-full hover:bg-neutral-100 hover:text-black ${themeSystem ? 'bg-neutral-100 text-black' : ''}`}
+        className={`h-6 w-6 grid place-content-center rounded-full hover:bg-gray-200 hover:text-black ${themeSystem ? 'bg-gray-200 text-black' : ''}`}
       >
         <MiComputer />
       </button>

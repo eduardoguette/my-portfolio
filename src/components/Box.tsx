@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-const CardSpotlight = ({
+const Box = ({
   title,
   children,
   customClass
@@ -65,4 +65,4 @@ const CardSpotlight = ({
   )
 }
 
-export default CardSpotlight
+export default Box

@@ -4,35 +4,33 @@ import TitleSection from './TitleSection.astro'
 const { experience, title } = Astro.props
 ---
 
-<section class="mt-12">
-  <TitleSection title="Experience" customClass="mb-12" id="experience" />
-  <ul class="md:columns-2 reveal gap-6">
-    {
-      experience.map(({ id, company, position, date, responsabilities }) => (
-        <li class="w-full transition-all mb-6">
-          <Box client:idle>
-            <header class="card-experience w-full">
-              <h4
-                class="font-medium text-xl mb-4  "
-                style={{
-                  gridArea: 'companyName'
-                }}
-              >
-                {position} - {company}
-              </h4>
-              <div class="text-md dark:text-gray-300">{responsabilities[0]}</div>
-              <time
-                style={{
-                  gridArea: 'date'
-                }}
-                class="ml-auto mt-4 text-sm block dark:text-gray-400"
-              >
-                {date}
-              </time>
-            </header>
-          </Box>
-        </li>
-      ))
-    }
-  </ul>
-</section>
+<TitleSection title="Experience" customClass="" id="experience" />
+<ul class="md:columns-2 reveal gap-6">
+  {
+    experience.map(({ id, company, position, date, responsabilities }) => (
+      <li class="w-full transition-all mb-6">
+        <Box client:idle>
+          <header class="card-experience w-full">
+            <h4
+              class="font-medium text-xl mb-4  "
+              style={{
+                gridArea: 'companyName'
+              }}
+            >
+              {position} - {company}
+            </h4>
+            <div class="text-md dark:text-gray-300">{responsabilities[0]}</div>
+            <time
+              style={{
+                gridArea: 'date'
+              }}
+              class="ml-auto mt-4 text-sm block dark:text-gray-400"
+            >
+              {date}
+            </time>
+          </header>
+        </Box>
+      </li>
+    ))
+  }
+</ul>
