@@ -49,7 +49,7 @@ const CardSpotlight = ({
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={"relative  overflow-hidden rounded-xl border border-neutral-800 bg-gradient-to-r from-black to-neutral-950 p-6 shadow-2xl w-full " + customClass}
+      className={"relative  overflow-hidden rounded-3xl border dark:border-neutral-800 bg-gradient-to-r dark:from-black dark:to-neutral-950 p-6 shadow-sm w-full " + customClass}
     >
       <div
         className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"

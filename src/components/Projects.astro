@@ -1,25 +1,22 @@
 ---
 import { Colaborators } from './Colaborators'
 import { ArrowUp } from './Icons'
+import TitleSection from './TitleSection.astro'
 
 const { projects } = Astro.props
 ---
 
-<div class="block mt-8 relative overflow-hidden">
-  <ul class="grid grid-bento grid-cols-3 grid-rows-3 gap-6 mt-8 relative">
+<section class="flex flex-col gap-12">
+  <TitleSection id="projects" title="Projects" customClass="" />
+  <ul class="md:columns-2 gap-6 mt-8 reveal">
     {
       projects.map((project, index) => (
-        <li
-          style={{
-            gridArea: `item${index}`
-          }}
-          class="aspect-video block relative group"
-        >
+        <li class="aspect-video block relative group transition-all mb-6">
           <picture class="block rounded-lg overflow-hidden relative">
-            <span class="inset-0 bg-black bg-opacity-30 absolute " />
+            <span class="inset-0 bg-black dark:bg-opacity-10 dark:absolute " />
             <img
               src={project.image}
-              alt={project.name + ' image By Eduardo Guette' }
+              alt={project.name + ' image By Eduardo Guette'}
               referrerpolicy="no-referrer"
               loading="lazy"
               width={project.image}
@@ -29,14 +26,13 @@ const { projects } = Astro.props
           <a
             href={project.url}
             target="_blank"
-            class="absolute inset-0 z-20 w-max h-max bg-black backdrop-blur-md px-3 py-1 rounded-full text-xs border bg-opacity-60 border-gray-600 m-auto flex items-center gap-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300"
+            class="absolute inset-0 z-20 w-max h-max bg-black backdrop-blur-md px-3 py-1 rounded-full text-xs border text-white bg-opacity-60 border-gray-600 m-auto flex items-center gap-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300"
           >
             {project.name}
             <span class="border-l pl-2">
               <ArrowUp className={'h-3 w-3'} />
             </span>
           </a>
-
           <article class="hidden">
             <div class="p-5 ">
               <h3 class="font-bold text-lg mt-1">{project.name}</h3>
@@ -72,8 +68,4 @@ const { projects } = Astro.props
       ))
     }
   </ul>
-  <div
-    class="h-44 -bottom-6 w-[120%] -left-6 absolute bg-gradient-to-b from-transparent to-black"
-  >
-  </div>
-</div>
+</section>

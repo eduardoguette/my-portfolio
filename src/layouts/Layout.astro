@@ -51,8 +51,34 @@ const { title, description, lang, canonical } = Astro.props
     <title>{title}</title>
   </head>
 </html>
-<body class="">
-  <div class="scroll-smooth md:mb-0 w-full text-white bg-black">
+<body >
+  <script is:inline>
+    console.log(
+      "%c Eduardo Guette 🚀",
+      "background: #000; color: #fff; font-size: 2rem; padding: 0.5rem 1rem; border-radius: 0.5rem;"
+    );
+    console.log(
+      "%c Web Developer",
+      "background: #000; color: #fff; font-size: 1rem; padding: 0.5rem 1rem; border-radius: 0.5rem;"
+    );
+    const theme = (() => {
+      if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+      }
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+      return "light";
+    })();
+  
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+    window.localStorage.setItem("theme", theme);
+  </script>
+  <div class="scroll-smooth md:mb-0 w-full dark:text-white dark:bg-black">
     <slot />
   </div>
 </body><style is:global>

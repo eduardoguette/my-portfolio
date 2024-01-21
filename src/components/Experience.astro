@@ -1,10 +1,10 @@
 ---
 import Box from './Box'
 import TitleSection from './TitleSection.astro'
-const { experience } = Astro.props
+const { experience, title } = Astro.props
 ---
 
-<section class="mt-6">
+<section class="mt-12">
   <TitleSection title="Experience" customClass="mb-12" id="experience" />
   <ul class="md:columns-2 reveal gap-6">
     {
@@ -20,12 +20,12 @@ const { experience } = Astro.props
               >
                 {position} - {company}
               </h4>
-              <div class="text-md text-gray-300">{responsabilities[0]}</div>
+              <div class="text-md dark:text-gray-300">{responsabilities[0]}</div>
               <time
                 style={{
                   gridArea: 'date'
                 }}
-                class="ml-auto mt-4 text-sm block text-gray-400"
+                class="ml-auto mt-4 text-sm block dark:text-gray-400"
               >
                 {date}
               </time>

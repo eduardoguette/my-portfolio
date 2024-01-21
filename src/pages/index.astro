@@ -11,6 +11,7 @@ import NavMenu from '../components/NavMenu.astro'
 import Projects from '../components/Projects.astro'
 import SocialNav from '../components/SocialNav'
 import TitleSection from '../components/TitleSection.astro'
+import { ToggleDarkMode } from '../components/ToggleDarkMode.tsx'
 import Layout from '../layouts/Layout.astro'
 ---
 
@@ -26,7 +27,7 @@ import Layout from '../layouts/Layout.astro'
     <article class="mb-8 lg:w-[1035px] mx-auto" id="about">
       <header
         id="aboutme"
-        class="relative md:grid-cols-[315px,1fr] grid bento gap-8 w-full overflow-hidden"
+        class="relative pb-7 md:grid-cols-[315px,1fr] grid bento gap-8 w-full overflow-hidden"
       >
         <Box client:idle>
           <Hero />
@@ -34,10 +35,10 @@ import Layout from '../layouts/Layout.astro'
             class="z-20 relative text-3xl md:-left-0 mt-6 font-medium"
             set:html={data.en.hero.title}
           />
-          <p class="text-gray-300 mt-1">
+          <p class="dark:text-gray-300 mt-1">
             {data.en.hero.born}
           </p>
-          <p class="text-gray-300 mt-1">
+          <p class="dark:text-gray-300 mt-1">
             {data.en.hero.work}
           </p>
         </Box>
@@ -50,7 +51,7 @@ import Layout from '../layouts/Layout.astro'
               <SocialNav />
             </Box>
             <Box
-              customClass=" m-0 overflow-hidden w-max  px-1 py-1"
+              customClass=" m-0 overflow-hidden w-max  px-1 py-1 "
               client:idle
             >
               <Map />
@@ -59,9 +60,8 @@ import Layout from '../layouts/Layout.astro'
         </div>
       </header>
     </article>
-    <div class="lg:w-[1035px] mx-auto flex flex-col">
-      <TitleSection title="I have collaborated with" customClass="my-10" />
-
+    <div class="lg:w-[1035px] mx-auto flex flex-col gap-12">
+      <TitleSection title="I have collaborated with" customClass="" />
       <Box client:idle>
         <div class="absolute top-0 flex w-full justify-center">
           <div
@@ -72,19 +72,16 @@ import Layout from '../layouts/Layout.astro'
         <Companies />
       </Box>
 
-      <TitleSection id="projects" title="Projects" customClass="mt-10" />
       <Projects projects={data.en.projects} name="Projects" />
 
-      <Experience 
-        experience={data.en.experience}
-        name="Experience"
-      />
+      <Experience experience={data.en.experience} name="Experience" />
     </div>
   </main>
-  <footer
-    class="mt-20 px-4 md:px-0 text-sm md:w-[1035px] py-8 mx-auto justify-between flex"
-  >
-    <p class="text-neutral-600">Eduardo Guette</p>
-    <NavMenu />
+  <footer class="mt-20 px-4 md:px-0 text-sm md:w-[1035px] py-8 mx-auto">
+    <div class="justify-between items-center flex">
+      <p class="text-neutral-600">Eduardo Guette</p>
+      <NavMenu />
+    </div>
+    <ToggleDarkMode client:only />
   </footer>
 </Layout>
